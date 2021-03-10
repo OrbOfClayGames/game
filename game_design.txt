@@ -1,29 +1,42 @@
 project “Hel” game design document
 
+-----
+
 Genre:
-	Fixed-camera, Single Player, 3rd-Person, 2D, roguelike, RPG, idle, auto-combat
+	Fixed-camera, Single Player, 2D, roguelite, RPG, idle, auto-combat, deck-building
 
 Target Audience:
-	
+	Rated T for Teens, people who like satiric and ironic comedy
 
 Controls:
 	mouse and keyboard
 
 Thematic Setting:
-	victorian, dark
+	pixel-look, customisable hero
 
 Tech Stack:
-	Unity 2020.x with C#. aseprite for sprites.
+	Unity 2020.x with C#. aseprite for sprites. SFX?
 
 Platform(s):
 	PC
 
 demo game moment:
 	simple automatic linear level flow with auto combat (hitting and taking damage) against 3 or 4 enemy types.
-	enemies drop cards that determine the biome, enemy type, and loot
+	background represents card
+	village screen
+
 
 Game Summary:
-	 
+	enemies drop cards that determine the biome, enemy type, and loot
+	penalty for death, no penalty for exiting
+	determine starting difficulty
+	items are being kept
+	progress only saved when returning to village
+	separate inventories for items, equipment, and resources
+	excess inventory leads to battle penalties
+	companion cards with different abilities
+	probability for boss encounter proportional to cards played
+
 
 Core Player Experience:
 	
@@ -33,18 +46,24 @@ Central Story Theme:
 
 Design Pillar:
 	replayability
+	mocking humour
+	opportunity cost loot VS greed
+
 
 Anticipated Remarkability:
 	combination of genres
 
+
 Anticipated Launch date: Q4 2021
+
 
 Feature Development Priorities:
 automated combat with different enemy types to kill
-vlassic RPG abilities and stats
+classic RPG stats
 level building and game progression through card deck
 base building and upgrading
 inventory, loot, usable items 
 
+
 Reference Games:
-Loop Hero 
+Loop Hero, Hades, Thea: The Awakening
