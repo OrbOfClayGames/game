@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.Events;
 
 public class ScreenFaderManager : MonoBehaviour
@@ -9,15 +10,20 @@ public class ScreenFaderManager : MonoBehaviour
     public CutsceneTimelineBehaviour fadeFromBlackTimeline;
     public CutsceneTimelineBehaviour fadeToBlackTimeline;
 
+
+
+
     [Header("Events")]
     public UnityEvent fadeFromBlackFinishedEvent;
     public UnityEvent fadeToBlackFinishedEvent;
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         StartFadeFromBlack();
     }
+
+
+
 
     public void StartFadeFromBlack()
     {
