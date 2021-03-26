@@ -17,7 +17,7 @@ namespace game
         Negative
     }
 
-    [CreateAssetMenu(fileName = "UnitData_NAME_Ability_", menuName = "Dragon Crashers/Unit/Ability Data", order = 2)]
+    [CreateAssetMenu(fileName = "UnitData_NAME_Ability_", menuName = "game/Unit/Ability Data", order = 2)]
     public class UnitAbilityData : ScriptableObject
     {
         [Header("Display Info")]
