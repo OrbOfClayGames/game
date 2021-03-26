@@ -1716,6 +1716,7 @@ GameObject:
   - component: {fileID: 1646156593}
   - component: {fileID: 1646156592}
   - component: {fileID: 1646156591}
+  - component: {fileID: 1646156594}
   m_Layer: 0
   m_Name: Unit_Hero
   m_TagString: Untagged
@@ -1755,6 +1756,7 @@ MonoBehaviour:
   healthBehaviour: {fileID: 1646156593}
   targetsBehaviour: {fileID: 1646156592}
   abilitiesBehaviour: {fileID: 1646156591}
+  audioBehaviour: {fileID: 1646156594}
   initializeSelf: 0
 --- !u!114 &1646156591
 MonoBehaviour:
@@ -1805,6 +1807,21 @@ MonoBehaviour:
   healthIsZeroEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1646156594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646156588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21cdf8e7381139549898f733c7e67f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxData: {fileID: 11400000, guid: 208ba77beede1fd4da3d4a3acdea4b9b, type: 2}
+  audioSource: {fileID: 1673876105}
+  sfxDeathVolume: 0
 --- !u!1 &1673876103
 GameObject:
   m_ObjectHideFlags: 0

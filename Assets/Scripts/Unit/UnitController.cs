@@ -22,11 +22,11 @@ namespace game
         [Header("Ability Settings")]
         public UnitAbilitiesBehaviour abilitiesBehaviour;
 
-        [Header("Animation Settings")]
+        //[Header("Animation Settings")]
         //public UnitCharacterAnimationBehaviour characterAnimationBehaviour;
 
         [Header("Audio Settings")]
-        //public UnitAudioBehaviour audioBehaviour;
+        public UnitAudioBehaviour audioBehaviour;
 
         [Header("Debug")]
         public bool initializeSelf;
@@ -90,7 +90,7 @@ namespace game
             {
                 healthBehaviour.ChangeHealth(abilityValue);
                 //characterAnimationBehaviour.CharacterWasHit();
-                //audioBehaviour.PlaySFXGetHit();
+                audioBehaviour.PlaySFXGetHit();
                 //Debug.Log(abilityValue); works
             }
         }
@@ -105,7 +105,7 @@ namespace game
             unitIsAlive = false;
             abilitiesBehaviour.StopAllAbilities();
             //characterAnimationBehaviour.CharacterHasDied();
-            //audioBehaviour.PlaySFXDeath();
+            audioBehaviour.PlaySFXDeath();
 
             DelegateEventUnitDied();
         }
