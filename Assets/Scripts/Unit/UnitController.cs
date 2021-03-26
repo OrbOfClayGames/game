@@ -56,6 +56,7 @@ namespace game
         public void SetAlive()
         {
             healthBehaviour.SetupCurrentHealth(data.totalHealth);
+            Debug.Log(data.totalHealth);
             unitIsAlive = true;
         }
 
@@ -90,6 +91,7 @@ namespace game
                 healthBehaviour.ChangeHealth(abilityValue);
                 //characterAnimationBehaviour.CharacterWasHit();
                 //audioBehaviour.PlaySFXGetHit();
+                //Debug.Log(abilityValue); works
             }
         }
         

@@ -40,12 +40,13 @@ namespace game
             }
 
             healthDifferenceEvent.Invoke(healthDifference);
+            //Debug.Log(healthDifference); works
             DelegateEventHealthChanged();
         }
 
         public int GetCurrentHealth()
         {
-            return currentHealth;
+            return currentHealth;            
         }
 
         void HealthIsZeroEvent()
@@ -58,6 +59,7 @@ namespace game
             if(HealthChangedEvent != null)
             {
                 HealthChangedEvent(currentHealth);
+                Debug.Log(currentHealth);
             }
         }
 
