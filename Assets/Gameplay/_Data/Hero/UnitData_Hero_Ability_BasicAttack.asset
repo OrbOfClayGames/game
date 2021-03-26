@@ -15,5 +15,5 @@ MonoBehaviour:
   abilityName: Basic Attack
   valueModifer: 1
   valueRange: {x: 10, y: 20}
-  cooldownTime: 1
+  cooldownTime: 2
   targetType: 0
