@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityName: Basic Attack
   valueModifer: 1
-  valueRange: {x: 10, y: 20}
-  cooldownTime: 2
+  valueRange: {x: 10, y: 15}
+  cooldownTime: 1
   targetType: 0
