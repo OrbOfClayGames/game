@@ -15,5 +15,5 @@ MonoBehaviour:
   abilityName: Slime
   valueModifer: 1
   valueRange: {x: 1, y: 5}
-  cooldownTime: 2
+  cooldownTime: 3
   targetType: 0
