@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharMovementConcept : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     // config parameters
     [SerializeField] float xVelocity = 3f;
