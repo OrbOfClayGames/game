@@ -1,0 +1,876 @@
+fileFormatVersion: 2
+guid: 66f138d7d2c1de34199f878d09afbd44
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2600265236513782353
+    second: 20210402_greyguy_fallgetup_0
+  - first:
+      213: 8909449236386769869
+    second: 20210402_greyguy_fallgetup_1
+  - first:
+      213: 5349785576876446086
+    second: 20210402_greyguy_fallgetup_2
+  - first:
+      213: -5587648598943478368
+    second: 20210402_greyguy_fallgetup_3
+  - first:
+      213: -594337710859443157
+    second: 20210402_greyguy_fallgetup_4
+  - first:
+      213: -1817665774482771993
+    second: 20210402_greyguy_fallgetup_5
+  - first:
+      213: 3105735352747716616
+    second: 20210402_greyguy_fallgetup_6
+  - first:
+      213: -7901765186498727631
+    second: 20210402_greyguy_fallgetup_7
+  - first:
+      213: 2081223951012924400
+    second: 20210402_greyguy_fallgetup_8
+  - first:
+      213: 7152405401268723891
+    second: 20210402_greyguy_fallgetup_9
+  - first:
+      213: -5992211229557797913
+    second: 20210402_greyguy_fallgetup_10
+  - first:
+      213: 1243472354781534385
+    second: 20210402_greyguy_fallgetup_11
+  - first:
+      213: -8951770717273697283
+    second: 20210402_greyguy_fallgetup_12
+  - first:
+      213: 164678352318817526
+    second: 20210402_greyguy_fallgetup_13
+  - first:
+      213: 757291554391764240
+    second: 20210402_greyguy_fallgetup_14
+  - first:
+      213: 4755974817617328629
+    second: 20210402_greyguy_fallgetup_15
+  - first:
+      213: 3461782814080400714
+    second: 20210402_greyguy_fallgetup_16
+  - first:
+      213: -272736748003907889
+    second: 20210402_greyguy_fallgetup_17
+  - first:
+      213: -5441852993786726650
+    second: 20210402_greyguy_fallgetup_18
+  - first:
+      213: 6817721766135732826
+    second: 20210402_greyguy_fallgetup_19
+  - first:
+      213: -1309752417015163154
+    second: 20210402_greyguy_fallgetup_20
+  - first:
+      213: -4824488088816008107
+    second: 20210402_greyguy_fallgetup_21
+  - first:
+      213: 8487649792887649650
+    second: 20210402_greyguy_fallgetup_22
+  - first:
+      213: 6534325752300032405
+    second: 20210402_greyguy_fallgetup_23
+  - first:
+      213: -4179490374318829052
+    second: 20210402_greyguy_fallgetup_24
+  - first:
+      213: 7429556429120179846
+    second: 20210402_greyguy_fallgetup_25
+  - first:
+      213: -7437627596234373842
+    second: 20210402_greyguy_fallgetup_26
+  - first:
+      213: 1569857728494590757
+    second: 20210402_greyguy_fallgetup_27
+  - first:
+      213: -5095217154784708116
+    second: 20210402_greyguy_fallgetup_28
+  - first:
+      213: -3818269184169404410
+    second: 20210402_greyguy_fallgetup_29
+  - first:
+      213: 6881812551291361807
+    second: 20210402_greyguy_fallgetup_30
+  - first:
+      213: -2489592716742450223
+    second: 20210402_greyguy_fallgetup_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 4
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a7330b47ff51420800000000000000
+      internalID: 2600265236513782353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 4
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb653f40e8b4ab70800000000000000
+      internalID: 8909449236386769869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 4
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6819a3643a14e3a40800000000000000
+      internalID: 5349785576876446086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 4
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0adc342343fa472b0800000000000000
+      internalID: -5587648598943478368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 4
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24aa9b300d70c7f0800000000000000
+      internalID: -594337710859443157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efa197cb9a56c6e0800000000000000
+      internalID: -1817665774482771993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80076e239d9c91b20800000000000000
+      internalID: 3105735352747716616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131f130ad6a475290800000000000000
+      internalID: -7901765186498727631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_8
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb092a182ef1ec10800000000000000
+      internalID: 2081223951012924400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_9
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0253041d2724360800000000000000
+      internalID: 7152405401268723891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_10
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebc91382a367dca0800000000000000
+      internalID: -5992211229557797913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_11
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b895cab483b14110800000000000000
+      internalID: 1243472354781534385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_12
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 4
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3582e06fbe4c380800000000000000
+      internalID: -8951770717273697283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_13
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4e824c61e094200800000000000000
+      internalID: 164678352318817526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_14
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 4
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01dacea08a0728a00800000000000000
+      internalID: 757291554391764240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_15
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9b8ccf5ed900240800000000000000
+      internalID: 4755974817617328629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_16
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d70dac029ba0030800000000000000
+      internalID: 3461782814080400714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_17
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 4
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6280a6f5b073cf0800000000000000
+      internalID: -272736748003907889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_18
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 4
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6073279c887aa74b0800000000000000
+      internalID: -5441852993786726650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_19
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 4
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a18ff03d96d9e50800000000000000
+      internalID: 6817721766135732826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_20
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 4
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee61a18bd13d2dde0800000000000000
+      internalID: -1309752417015163154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_21
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 4
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554c40bf4a9fb0db0800000000000000
+      internalID: -4824488088816008107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_22
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 4
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2757cf264803ac570800000000000000
+      internalID: 8487649792887649650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_23
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 4
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591d780c6a69eaa50800000000000000
+      internalID: 6534325752300032405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_24
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 4
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402df8006a77ff5c0800000000000000
+      internalID: -4179490374318829052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_25
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 4
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e8d6475361b1760800000000000000
+      internalID: 7429556429120179846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_26
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 4
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25cec28b1d38c890800000000000000
+      internalID: -7437627596234373842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_27
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 4
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b52de594149c510800000000000000
+      internalID: 1569857728494590757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_28
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 4
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9b49b4ef62a49b0800000000000000
+      internalID: -5095217154784708116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_29
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 4
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60813c43868c20bc0800000000000000
+      internalID: -3818269184169404410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_30
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 4
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0adb82dd0c118f50800000000000000
+      internalID: 6881812551291361807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_fallgetup_31
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 4
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3aa235d90337dd0800000000000000
+      internalID: -2489592716742450223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

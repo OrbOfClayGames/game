@@ -1,0 +1,636 @@
+fileFormatVersion: 2
+guid: bfdd55cbdf47cd249ad6bef97b74dc45
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8363747910032072696
+    second: 20210402_greyguy_swordattackandblock_0
+  - first:
+      213: -8104703359973296486
+    second: 20210402_greyguy_swordattackandblock_1
+  - first:
+      213: 5739974328104909595
+    second: 20210402_greyguy_swordattackandblock_2
+  - first:
+      213: 7237673321649393068
+    second: 20210402_greyguy_swordattackandblock_3
+  - first:
+      213: 4800204985913971391
+    second: 20210402_greyguy_swordattackandblock_4
+  - first:
+      213: -6566113362129855460
+    second: 20210402_greyguy_swordattackandblock_5
+  - first:
+      213: -6004061180673377242
+    second: 20210402_greyguy_swordattackandblock_6
+  - first:
+      213: -3713259688824209534
+    second: 20210402_greyguy_swordattackandblock_7
+  - first:
+      213: 2498097992928877918
+    second: 20210402_greyguy_swordattackandblock_8
+  - first:
+      213: 3115002141581929795
+    second: 20210402_greyguy_swordattackandblock_9
+  - first:
+      213: -7531040553366558088
+    second: 20210402_greyguy_swordattackandblock_10
+  - first:
+      213: -4216875637951794883
+    second: 20210402_greyguy_swordattackandblock_11
+  - first:
+      213: -594201007107707376
+    second: 20210402_greyguy_swordattackandblock_12
+  - first:
+      213: -1137793283287392614
+    second: 20210402_greyguy_swordattackandblock_13
+  - first:
+      213: 3493058313432303927
+    second: 20210402_greyguy_swordattackandblock_14
+  - first:
+      213: -8975627040678952929
+    second: 20210402_greyguy_swordattackandblock_15
+  - first:
+      213: -5945950462644773007
+    second: 20210402_greyguy_swordattackandblock_16
+  - first:
+      213: -264914970935860711
+    second: 20210402_greyguy_swordattackandblock_17
+  - first:
+      213: 5591028480756348330
+    second: 20210402_greyguy_swordattackandblock_18
+  - first:
+      213: -7625554055156403921
+    second: 20210402_greyguy_swordattackandblock_19
+  - first:
+      213: -4455497798681106855
+    second: 20210402_greyguy_swordattackandblock_20
+  - first:
+      213: -267896341249363152
+    second: 20210402_greyguy_swordattackandblock_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff90604960021470800000000000000
+      internalID: 8363747910032072696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9670e21c3f468f80800000000000000
+      internalID: -8104703359973296486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1bfd8e5d3c78af40800000000000000
+      internalID: 5739974328104909595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadcb390a81617460800000000000000
+      internalID: 7237673321649393068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2167a8001cd9240800000000000000
+      internalID: 4800204985913971391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cdd479faa70e4a0800000000000000
+      internalID: -6566113362129855460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_6
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c3044ca2a4daca0800000000000000
+      internalID: -6004061180673377242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_7
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 4
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ffad89cf9d77cc0800000000000000
+      internalID: -3713259688824209534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_8
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 4
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d54aa93e60ba220800000000000000
+      internalID: 2498097992928877918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_9
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d629b91f5ba3b20800000000000000
+      internalID: 3115002141581929795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a6683948e5c7790800000000000000
+      internalID: -7531040553366558088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_11
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3172e103f5aa75c0800000000000000
+      internalID: -4216875637951794883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_12
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e6a2e0559f0c7f0800000000000000
+      internalID: -594201007107707376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_13
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e54d1890fb530f0800000000000000
+      internalID: -1137793283287392614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_14
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7398bdf6706d97030800000000000000
+      internalID: 3493058313432303927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_15
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10c0fbe2ca207380800000000000000
+      internalID: -8975627040678952929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_16
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f1df5ae8dbb7da0800000000000000
+      internalID: -5945950462644773007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_17
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9126fadcc35d25cf0800000000000000
+      internalID: -264914970935860711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_18
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5f29cd7c2579d40800000000000000
+      internalID: 5591028480756348330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_19
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21fcde1df69c2690800000000000000
+      internalID: -7625554055156403921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_20
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956e31cbb54ea22c0800000000000000
+      internalID: -4455497798681106855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20210402_greyguy_swordattackandblock_21
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033743f62bd384cf0800000000000000
+      internalID: -267896341249363152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

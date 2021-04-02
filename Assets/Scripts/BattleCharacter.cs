@@ -6,8 +6,11 @@ public class BattleCharacter : MonoBehaviour
 {
     public bool isPlayer;
     public string characterName;
-    public int currentHP, maxHP;
+    public int currentHP, maxHP, damage;
     public bool hasDied;
+
+    public string[] movesAvailable;
+
     //public float timeBetweenAttacks = 1f;
     
     // Start is called before the first frame update

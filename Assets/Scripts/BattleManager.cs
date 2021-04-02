@@ -19,7 +19,7 @@ public class BattleManager : MonoBehaviour
     public List<BattleCharacter> activeBattlers = new List<BattleCharacter>();
 
     float timeSinceEnemyLastAttack = 0;
-    float timeSincePlayerLastAttack = 0;
+    float timeSincePlayerLastAttack = 0;    
 
 
     // Start is called before the first frame update
@@ -96,6 +96,11 @@ public class BattleManager : MonoBehaviour
         }
     }
 
+    public void DealDamage(int target, int movePower)
+    {
+
+    }
+
     public void EnemyAttack()
     {
         List<int> players = new List<int>();
@@ -108,14 +113,29 @@ public class BattleManager : MonoBehaviour
         }
 
         int selectedTarget = players[Random.Range(0, players.Count)];
-        
 
-        if (timeSinceEnemyLastAttack > 1f)
+        List<int> enemies = new List<int>();
+        for (int i = 0; i < activeBattlers.Count; i++)
         {
-            activeBattlers[selectedTarget].currentHP -= 1;
-            Debug.Log(activeBattlers[selectedTarget].characterName + activeBattlers[selectedTarget].currentHP);
-            timeSinceEnemyLastAttack = 0;
+            if (!activeBattlers[i].isPlayer && activeBattlers[i].currentHP > 0)
+            {
+                enemies.Add(i);
+
+                if (timeSinceEnemyLastAttack > 1f)
+                {
+                    activeBattlers[selectedTarget].currentHP -= activeBattlers[i].damage;
+
+                    Debug.Log(activeBattlers[i].characterName + " deals " + activeBattlers[i].damage + " damage to " + activeBattlers[selectedTarget].characterName + ". Current HP: " + activeBattlers[selectedTarget].currentHP);
+
+                    timeSinceEnemyLastAttack = 0;                    
+                }
+            }
+
+            
         }
+
+
+        
 
         
     }
@@ -127,22 +147,35 @@ public class BattleManager : MonoBehaviour
         {
             if (!activeBattlers[i].isPlayer && activeBattlers[i].currentHP > 0)
             {
-                enemies.Add(i);
-                
+                enemies.Add(i);               
             }
         }
 
         int selectedTarget = enemies[Random.Range(0, enemies.Count)];
-        
 
-
-
-
-        if (timeSincePlayerLastAttack > 1f)
+        List<int> players = new List<int>();
+        for (int i = 0; i < activeBattlers.Count; i++)
         {
-            activeBattlers[selectedTarget].currentHP -= 10;
-            Debug.Log(activeBattlers[selectedTarget].characterName + activeBattlers[selectedTarget].currentHP);
-            timeSincePlayerLastAttack = 0;
+            if (activeBattlers[i].isPlayer && activeBattlers[i].currentHP > 0)
+            {
+                players.Add(i);
+
+                if (timeSincePlayerLastAttack > 1f)
+                {
+                    //activeBattlers[selectedTarget].currentHP -= activeBattlers[i].damage;
+                    //Debug.Log(activeBattlers[i].characterName + " deals " + activeBattlers[i].damage + " damage to " + activeBattlers[selectedTarget].characterName + ". Current HP: " + activeBattlers[selectedTarget].currentHP);
+                    activeBattlers[selectedTarget].currentHP -= GameManager.instance.playerStats[i].damage;
+                    activeBattlers[i].GetComponent<Animator>().SetTrigger("attacking");
+                    Debug.Log(activeBattlers[i].characterName + " deals " + GameManager.instance.playerStats[i].damage + " damage to " + activeBattlers[selectedTarget].characterName + ". Current HP: " + activeBattlers[selectedTarget].currentHP);
+                    //Debug.Log(GameManager.instance.playerStats[i].damage);
+
+
+                    //Debug.Log(activeBattlers[selectedTarget].characterName + activeBattlers[selectedTarget].currentHP);
+                    timeSincePlayerLastAttack = 0;
+                }
+            }
         }
+
+
     }
 }

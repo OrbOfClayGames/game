@@ -99,4 +99,8 @@ MonoBehaviour:
   characterName: Slime
   currentHP: 1500
   maxHP: 2500
+  damage: 15
   hasDied: 0
+  movesAvailable:
+  - AttackBasic
+  - AttackBasic2
