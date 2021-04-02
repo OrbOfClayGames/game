@@ -2053,6 +2053,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3857930192267601191, guid: 86b775d35331d0240b792bffcc97bb8c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4511845988843747138, guid: f29906085fd6b20449dc9b3b79c403fb, type: 3}
+    - target: {fileID: 3857930192267601191, guid: 86b775d35331d0240b792bffcc97bb8c, type: 3}
       propertyPath: m_SortingLayer
       value: 3
       objectReference: {fileID: 0}
