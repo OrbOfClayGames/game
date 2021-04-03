@@ -27,6 +27,7 @@ public class VillageHandler : MonoBehaviour
         for (int i = 0; i < resourceStrings.Length; i++)
         {
             int value = villageData.GetResourceCount(resourceStrings[i]);
+            Debug.Log(i+" "+resourceTexts.Length);
             resourceTexts[i].text = value.ToString();
         }
     }
