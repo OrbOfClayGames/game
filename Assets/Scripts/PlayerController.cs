@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharMovementConcept : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     // config parameters
     [SerializeField] float xVelocity = 3f;
@@ -10,10 +10,17 @@ public class CharMovementConcept : MonoBehaviour
     // state
     bool hasStarted = false;
 
+    // chached component references
+    Rigidbody2D myRigidbody;
+    Animator myAnimator;
+
+    
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        myRigidbody = GetComponent<Rigidbody2D>();
+        myAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -21,16 +28,19 @@ public class CharMovementConcept : MonoBehaviour
     {
         if (!hasStarted)
         {            
-            LaunchOnMouseClick();
+            Walk();
         }
     }
 
-    private void LaunchOnMouseClick()
+    private void Walk()
     {
         if (Input.GetMouseButtonDown(0))
         {
             hasStarted = true;
-            GetComponent<Rigidbody2D>().velocity = new Vector2(xVelocity, 0f);
+            Vector2 playerVelocity = new Vector2(xVelocity, 0f);
+            myRigidbody.velocity = playerVelocity;
+
+            myAnimator.SetBool("walking", true);
         }
     }
 }
