@@ -42,7 +42,7 @@ public class BattleManager : MonoBehaviour
             timeSinceEnemyLastAttack += Time.deltaTime;
             timeSincePlayerLastAttack += Time.deltaTime;
             EnemyAttack();
-            PlayerAttack();
+            PlayerAttack();            
         }
     }
 
@@ -142,6 +142,8 @@ public class BattleManager : MonoBehaviour
 
     public void PlayerAttack()
     {
+        
+
         List<int> enemies = new List<int>();
         for (int i = 0; i < activeBattlers.Count; i++)
         {
@@ -160,12 +162,19 @@ public class BattleManager : MonoBehaviour
             {
                 players.Add(i);
 
-                if (timeSincePlayerLastAttack > 1f)
+                
+
+                if (timeSincePlayerLastAttack > 3f)
                 {
                     //activeBattlers[selectedTarget].currentHP -= activeBattlers[i].damage;
                     //Debug.Log(activeBattlers[i].characterName + " deals " + activeBattlers[i].damage + " damage to " + activeBattlers[selectedTarget].characterName + ". Current HP: " + activeBattlers[selectedTarget].currentHP);
+
+                    activeBattlers[i].GetComponent<Animator>().SetBool("attacking", true);
+                    
+                                     
+
                     activeBattlers[selectedTarget].currentHP -= GameManager.instance.playerStats[i].damage;
-                    activeBattlers[i].GetComponent<Animator>().SetTrigger("attacking");
+                    
                     Debug.Log(activeBattlers[i].characterName + " deals " + GameManager.instance.playerStats[i].damage + " damage to " + activeBattlers[selectedTarget].characterName + ". Current HP: " + activeBattlers[selectedTarget].currentHP);
                     //Debug.Log(GameManager.instance.playerStats[i].damage);
 
