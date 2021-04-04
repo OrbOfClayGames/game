@@ -1,0 +1,636 @@
+fileFormatVersion: 2
+guid: f8166abdaa704664c9882330d4c84735
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6265887444224515692
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_0
+  - first:
+      213: -490711933607195799
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_1
+  - first:
+      213: 7882916765568553910
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_2
+  - first:
+      213: 201791697012118500
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_3
+  - first:
+      213: 4379831096035071773
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_4
+  - first:
+      213: -4394031014187189487
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_5
+  - first:
+      213: 5924184664756186523
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_6
+  - first:
+      213: -3218467098140587893
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_7
+  - first:
+      213: -6591087172998034752
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_8
+  - first:
+      213: -3361861400827390739
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_9
+  - first:
+      213: -8310022251343784374
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_10
+  - first:
+      213: 729405816167727587
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_11
+  - first:
+      213: 7730374093543490757
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_12
+  - first:
+      213: 4545212908388025566
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_13
+  - first:
+      213: -6243968923259315963
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_14
+  - first:
+      213: -2278396699135772215
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_15
+  - first:
+      213: -6012410053984275111
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_16
+  - first:
+      213: 4768558740602354148
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_17
+  - first:
+      213: 6564621953036117726
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_18
+  - first:
+      213: 4285905953346797077
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_19
+  - first:
+      213: -1164627582154829000
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_20
+  - first:
+      213: 5773116612227609095
+    second: Spritesheet_GreyGuy_Attack_Sword_Block_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e1593be67e4f650800000000000000
+      internalID: 6265887444224515692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b4c46a814a039f0800000000000000
+      internalID: -490711933607195799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b35fa5680fb56d60800000000000000
+      internalID: 7882916765568553910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3d703ba78ecc200800000000000000
+      internalID: 201791697012118500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17516f2d2948cc30800000000000000
+      internalID: 4379831096035071773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11bb25bb2144503c0800000000000000
+      internalID: -4394031014187189487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_6
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9deb9e909ee63250800000000000000
+      internalID: 5924184664756186523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_7
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 4
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b884c06f935b553d0800000000000000
+      internalID: -3218467098140587893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_8
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 4
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca81d12321c784a0800000000000000
+      internalID: -6591087172998034752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_9
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4169b2ed44851d0800000000000000
+      internalID: -3361861400827390739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46df017acedcac80800000000000000
+      internalID: -8310022251343784374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_11
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e108c9a9be5f1a00800000000000000
+      internalID: 729405816167727587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_12
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4ca82e74ec74b60800000000000000
+      internalID: 7730374093543490757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_13
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed40df00f07d31f30800000000000000
+      internalID: 4545212908388025566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_14
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509dc84a857f859a0800000000000000
+      internalID: -6243968923259315963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_15
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9f69a06428160e0800000000000000
+      internalID: -2278396699135772215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_16
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955b74839e0af8ca0800000000000000
+      internalID: -6012410053984275111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_17
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9ff20e8e25d2240800000000000000
+      internalID: 4768558740602354148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_18
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6e27ba2e83a1b50800000000000000
+      internalID: 6564621953036117726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_19
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51eb7f1c1c89a7b30800000000000000
+      internalID: 4285905953346797077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_20
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8331a0e626966dfe0800000000000000
+      internalID: -1164627582154829000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Attack_Sword_Block_21
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 4
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702bbb6b8fa3e1050800000000000000
+      internalID: 5773116612227609095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

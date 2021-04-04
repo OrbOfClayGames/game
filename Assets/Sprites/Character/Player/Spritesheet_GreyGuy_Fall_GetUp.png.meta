@@ -1,0 +1,876 @@
+fileFormatVersion: 2
+guid: 986712214cef90442935bfa8ee06e01b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7254511029687628230
+    second: Spritesheet_GreyGuy_Fall_GetUp_0
+  - first:
+      213: -6941419584437830827
+    second: Spritesheet_GreyGuy_Fall_GetUp_1
+  - first:
+      213: 7360900941451490042
+    second: Spritesheet_GreyGuy_Fall_GetUp_2
+  - first:
+      213: -3235990340459294835
+    second: Spritesheet_GreyGuy_Fall_GetUp_3
+  - first:
+      213: -7958852019669118971
+    second: Spritesheet_GreyGuy_Fall_GetUp_4
+  - first:
+      213: 2736529573765293561
+    second: Spritesheet_GreyGuy_Fall_GetUp_5
+  - first:
+      213: -4120218235646929259
+    second: Spritesheet_GreyGuy_Fall_GetUp_6
+  - first:
+      213: -7530509544698579011
+    second: Spritesheet_GreyGuy_Fall_GetUp_7
+  - first:
+      213: 4809359015481064253
+    second: Spritesheet_GreyGuy_Fall_GetUp_8
+  - first:
+      213: -6935862125728070763
+    second: Spritesheet_GreyGuy_Fall_GetUp_9
+  - first:
+      213: 3480269648730012520
+    second: Spritesheet_GreyGuy_Fall_GetUp_10
+  - first:
+      213: 6593565867898907604
+    second: Spritesheet_GreyGuy_Fall_GetUp_11
+  - first:
+      213: -1614503432828751347
+    second: Spritesheet_GreyGuy_Fall_GetUp_12
+  - first:
+      213: 9221455011271835653
+    second: Spritesheet_GreyGuy_Fall_GetUp_13
+  - first:
+      213: -8934251685098518197
+    second: Spritesheet_GreyGuy_Fall_GetUp_14
+  - first:
+      213: -8603083401642256929
+    second: Spritesheet_GreyGuy_Fall_GetUp_15
+  - first:
+      213: -5671592179087615295
+    second: Spritesheet_GreyGuy_Fall_GetUp_16
+  - first:
+      213: -2422139182620626822
+    second: Spritesheet_GreyGuy_Fall_GetUp_17
+  - first:
+      213: 9132464378649287168
+    second: Spritesheet_GreyGuy_Fall_GetUp_18
+  - first:
+      213: -5976374837853574752
+    second: Spritesheet_GreyGuy_Fall_GetUp_19
+  - first:
+      213: 1020239730858573349
+    second: Spritesheet_GreyGuy_Fall_GetUp_20
+  - first:
+      213: 5102749869530611792
+    second: Spritesheet_GreyGuy_Fall_GetUp_21
+  - first:
+      213: -6178247783998240203
+    second: Spritesheet_GreyGuy_Fall_GetUp_22
+  - first:
+      213: -4181821347652236659
+    second: Spritesheet_GreyGuy_Fall_GetUp_23
+  - first:
+      213: -3213420022264450186
+    second: Spritesheet_GreyGuy_Fall_GetUp_24
+  - first:
+      213: -102584614264795228
+    second: Spritesheet_GreyGuy_Fall_GetUp_25
+  - first:
+      213: 3547122101425495174
+    second: Spritesheet_GreyGuy_Fall_GetUp_26
+  - first:
+      213: -3526653024722232510
+    second: Spritesheet_GreyGuy_Fall_GetUp_27
+  - first:
+      213: -5712093034165472338
+    second: Spritesheet_GreyGuy_Fall_GetUp_28
+  - first:
+      213: -7069160773592545227
+    second: Spritesheet_GreyGuy_Fall_GetUp_29
+  - first:
+      213: -8351932981875682925
+    second: Spritesheet_GreyGuy_Fall_GetUp_30
+  - first:
+      213: -5405138052196821504
+    second: Spritesheet_GreyGuy_Fall_GetUp_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 4
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ec05097acc25b90800000000000000
+      internalID: -7254511029687628230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 4
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bb4a84aaf1baf90800000000000000
+      internalID: -6941419584437830827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 4
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2fd02186c272660800000000000000
+      internalID: 7360900941451490042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 4
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f045c2ee37713d0800000000000000
+      internalID: -3235990340459294835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 4
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500d8b3814a7c8190800000000000000
+      internalID: -7958852019669118971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5a1a9062b1af520800000000000000
+      internalID: 2736529573765293561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5969d23385b02d6c0800000000000000
+      internalID: -4120218235646929259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db77d8aa7714e7790800000000000000
+      internalID: -7530509544698579011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_8
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b32132b864eb240800000000000000
+      internalID: 4809359015481064253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_9
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59384e8f42edebf90800000000000000
+      internalID: -6935862125728070763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_10
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b30276ec66c4030800000000000000
+      internalID: 3480269648730012520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_11
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db214ff83d018b50800000000000000
+      internalID: 6593565867898907604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_12
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 4
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02f79d8ea12899e0800000000000000
+      internalID: -1614503432828751347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_13
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5008a13b97039ff70800000000000000
+      internalID: 9221455011271835653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_14
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 4
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4984c79d69230480800000000000000
+      internalID: -8934251685098518197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_15
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5dd003a35bb9880800000000000000
+      internalID: -8603083401642256929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_16
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca599666f47a41b0800000000000000
+      internalID: -5671592179087615295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_17
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 4
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70b7571f35d26ed0800000000000000
+      internalID: -2422139182620626822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_18
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 4
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a9c4d67f70dbe70800000000000000
+      internalID: 9132464378649287168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_19
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 4
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9a729cfb6af0da0800000000000000
+      internalID: -5976374837853574752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_20
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 4
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52eb09731ae982e00800000000000000
+      internalID: 1020239730858573349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_21
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 4
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0500b0788fb90d640800000000000000
+      internalID: 5102749869530611792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_22
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 4
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ac07ccf54724aa0800000000000000
+      internalID: -6178247783998240203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_23
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 4
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a0b0bf3af27f5c0800000000000000
+      internalID: -4181821347652236659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_24
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 4
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673bcc2e383a763d0800000000000000
+      internalID: -3213420022264450186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_25
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 4
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af835b36db839ef0800000000000000
+      internalID: -102584614264795228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_26
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 4
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c576ef1c8e93130800000000000000
+      internalID: 3547122101425495174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_27
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 4
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24bdf5f42cfce0fc0800000000000000
+      internalID: -3526653024722232510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_28
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 4
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3759e36a19ab0b0800000000000000
+      internalID: -5712093034165472338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_29
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 4
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53804edfabb45ed90800000000000000
+      internalID: -7069160773592545227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_30
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 4
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3915e631439f71c80800000000000000
+      internalID: -8351932981875682925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_GreyGuy_Fall_GetUp_31
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 4
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0069cd444971df4b0800000000000000
+      internalID: -5405138052196821504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
