@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     // config parameters
     [SerializeField] float xVelocity = 3f;
 
+    public string areaTransitionName;
+
     // state
     bool hasStarted = false;
 

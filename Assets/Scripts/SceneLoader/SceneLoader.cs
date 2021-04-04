@@ -7,6 +7,7 @@ using Utilities.Inspector;
 public class SceneLoader : MonoBehaviour
 {
     public SceneField sceneToLoad;
+    public string areaTransitinName;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
