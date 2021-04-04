@@ -5,12 +5,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // config parameters
-    [SerializeField] float xVelocity = 3f;
+    [SerializeField] public float xVelocity = 3f;
 
     public string areaTransitionName;
 
     // state
-    bool hasStarted = false;
+    public bool hasStarted = false;
 
     // chached component references
     Rigidbody2D myRigidbody;
