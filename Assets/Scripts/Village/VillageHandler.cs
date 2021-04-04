@@ -13,7 +13,7 @@ public class VillageHandler : MonoBehaviour
     {
         villageData = ScriptableObject.CreateInstance<VillageData>();
         villageData.PopulateDictionaries(resourceStrings);
-        updateResourceCount();
+        UpdateResourceCount();
     }
 
     // Update is called once per frame
@@ -22,12 +22,11 @@ public class VillageHandler : MonoBehaviour
 
     }
 
-    private void updateResourceCount()
+    private void UpdateResourceCount()
     {
         for (int i = 0; i < resourceStrings.Length; i++)
         {
             int value = villageData.GetResourceCount(resourceStrings[i]);
-            Debug.Log(i+" "+resourceTexts.Length);
             resourceTexts[i].text = value.ToString();
         }
     }
