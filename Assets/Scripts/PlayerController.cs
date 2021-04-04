@@ -14,11 +14,22 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D myRigidbody;
     Animator myAnimator;
 
-    
+    public static PlayerController instance;
 
     // Start is called before the first frame update
     void Start()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }        
+
+        DontDestroyOnLoad(gameObject);
+
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
     }
