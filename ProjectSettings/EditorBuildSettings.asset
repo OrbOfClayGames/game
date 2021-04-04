@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gameplay/Scene_LevelForest.unity
     guid: 8328423359e31c84f939b82a0557d781
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/Scene_Campfire.unity
+    guid: b52c748b51fa5144a992ebafa22c2a81
   m_configObjects: {}
