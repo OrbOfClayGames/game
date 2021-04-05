@@ -7,6 +7,7 @@ public class VillageHandler : MonoBehaviour
 {
     [SerializeField] private Text[] resourceTexts;
     [SerializeField] private Image[] resourceImages;
+    [SerializeField] private Building[] buildingList;
     private readonly string[] resourceStrings = { "wood", "stone", "clay", "metal", "leather" };
     private VillageData villageData;
     // Start is called before the first frame update
@@ -37,8 +38,7 @@ public class VillageHandler : MonoBehaviour
         int index = Array.IndexOf(resourceStrings, resource);
         if (index == -1)
         {
-
-            Debug.Log("The resource \"" + resource + "\" does not exist in resourceStrings: "+ String.Join(", ", resourceStrings));
+            Debug.Log("The resource \"" + resource + "\" does not exist in resourceStrings: " + string.Join(", ", resourceStrings));
         }
         else
         {
@@ -62,6 +62,6 @@ public class VillageHandler : MonoBehaviour
 
     public void OnResourceButtonClick()
     {
-        UpdateResourceCount("woood",333);
+        UpdateResourceCount("wood", 333);
     }
 }

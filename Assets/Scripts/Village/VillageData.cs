@@ -16,7 +16,7 @@ public class VillageData : ScriptableObject
         plotAllocation.Add("1stPlot", "woodworker");
 
     }
-
+    
     public string GetBuildingOnPlot(string button)
     {
         Debug.Log(resourceCount["wood"]);
@@ -38,18 +38,7 @@ public class VillageData : ScriptableObject
         }
         else
         {
-            Debug.Log("key \"" + key + "\" does not exist in resourceCount: "+ System.String.Join(", ", resourceCount.Keys));
+            Debug.Log("key \"" + key + "\" does not exist in resourceCount: " + string.Join(", ", resourceCount.Keys));
         }
-    }
-
-    public bool CheckIfBuildable()
-    {
-        bool buildable = true;
-        foreach (var resource in resourceCount)
-        {
-            ;
-        }
-
-        return buildable;
     }
 }
