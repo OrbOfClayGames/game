@@ -12,6 +12,7 @@ public class SceneEntrance : MonoBehaviour
         if (transitionName == PlayerController.instance.levelTransitionname)
         {
             PlayerController.instance.transform.position = transform.position;
+
             PlayerController.instance.GetComponent<Animator>().SetBool("walking", false);            
             PlayerController.instance.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0f);
             PlayerController.instance.hasStarted = false;

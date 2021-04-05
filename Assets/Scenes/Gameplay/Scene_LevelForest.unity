@@ -2298,6 +2298,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2659896828708875525, guid: 8d704225d66d9d346ba2bed1ce577750, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2659896828708875525, guid: 8d704225d66d9d346ba2bed1ce577750, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 2659896829889330058, guid: 8d704225d66d9d346ba2bed1ce577750, type: 3}
+      propertyPath: levelTransitionname
+      value: Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 2659896829889330058, guid: 8d704225d66d9d346ba2bed1ce577750, type: 3}
+      propertyPath: sceneToLoad.sceneName
+      value: Scenes/Gameplay/Scene_Campfire
+      objectReference: {fileID: 0}
+    - target: {fileID: 2659896829889330058, guid: 8d704225d66d9d346ba2bed1ce577750, type: 3}
+      propertyPath: sceneToLoad.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: b52c748b51fa5144a992ebafa22c2a81, type: 3}
+    - target: {fileID: 2659896829889330068, guid: 8d704225d66d9d346ba2bed1ce577750, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2888654055605238435, guid: 8d704225d66d9d346ba2bed1ce577750, type: 3}
       propertyPath: transitionName
       value: Forest
