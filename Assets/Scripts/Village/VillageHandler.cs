@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -13,7 +14,7 @@ public class VillageHandler : MonoBehaviour
     {
         villageData = ScriptableObject.CreateInstance<VillageData>();
         villageData.PopulateDictionaries(resourceStrings);
-        UpdateResourceCount();
+        LoadAllResources();
     }
 
     // Update is called once per frame
@@ -22,7 +23,7 @@ public class VillageHandler : MonoBehaviour
 
     }
 
-    private void UpdateResourceCount()
+    private void LoadAllResources()
     {
         for (int i = 0; i < resourceStrings.Length; i++)
         {
@@ -31,11 +32,36 @@ public class VillageHandler : MonoBehaviour
         }
     }
 
+    private void LoadResourceCount(string resource)
+    {
+        int index = Array.IndexOf(resourceStrings, resource);
+        if (index == -1)
+        {
+
+            Debug.Log("The resource \"" + resource + "\" does not exist in resourceStrings: "+ String.Join(", ", resourceStrings));
+        }
+        else
+        {
+            int value = villageData.GetResourceCount(resource);
+            resourceTexts[index].text = value.ToString();
+        }
+
+    }
+
+    private void UpdateResourceCount(string resource, int value)
+    {
+        villageData.SetResourceCount(resource, value);
+        LoadResourceCount(resource);
+    }
+
     public void OnPlotButtonClick()
     {
         string currentButton = EventSystem.current.currentSelectedGameObject.name;
         villageData.GetBuildingOnPlot(currentButton);
     }
 
-
+    public void OnResourceButtonClick()
+    {
+        UpdateResourceCount("woood",333);
+    }
 }
