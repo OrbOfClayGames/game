@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7064854541985851360
+--- !u!1 &2659896828708875524
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,53 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7064854541985851366}
-  - component: {fileID: 7064854541985851367}
-  - component: {fileID: 7064854541985851365}
+  - component: {fileID: 2659896828708875525}
+  - component: {fileID: 2659896828708875526}
+  m_Layer: 0
+  m_Name: LevelEntrance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2659896828708875525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2659896828708875524}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.83, y: -0.13, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2659896829889330068}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2659896828708875526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2659896828708875524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61201e1f11bd47c4a8a86557a7c56220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionName: 
+--- !u!1 &2659896829889330057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2659896829889330068}
+  - component: {fileID: 2659896829889330059}
+  - component: {fileID: 2659896829889330058}
   m_Layer: 0
   m_Name: LevelExit
   m_TagString: Untagged
@@ -18,28 +62,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7064854541985851366
+--- !u!4 &2659896829889330068
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7064854541985851360}
+  m_GameObject: {fileID: 2659896829889330057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.32, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 18905014736687368}
+  - {fileID: 2659896828708875525}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &7064854541985851367
+--- !u!61 &2659896829889330059
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7064854541985851360}
+  m_GameObject: {fileID: 2659896829889330057}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -59,63 +103,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 7}
   m_EdgeRadius: 0
---- !u!114 &7064854541985851365
+--- !u!114 &2659896829889330058
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7064854541985851360}
+  m_GameObject: {fileID: 2659896829889330057}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 387de60a9ff47d14ab05fd904c9d8f66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad:
-    sceneAsset: {fileID: 102900000, guid: b52c748b51fa5144a992ebafa22c2a81, type: 3}
-    sceneName: Scenes/Gameplay/Scene_Campfire
-  areaTransitionName: Campfire
---- !u!1 &7119806929627989544
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 18905014736687368}
-  - component: {fileID: 2888654055605238435}
-  m_Layer: 0
-  m_Name: LevelEntrance
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &18905014736687368
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119806929627989544}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.67, y: -1.92, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7064854541985851366}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2888654055605238435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7119806929627989544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61201e1f11bd47c4a8a86557a7c56220, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transitionName: Forest
+    sceneAsset: {fileID: 102900000, guid: 8328423359e31c84f939b82a0557d781, type: 3}
+    sceneName: Scenes/Gameplay/Scene_LevelForest
+  levelTransitionname: 
+  sceneEntrance: {fileID: 2659896828708875526}

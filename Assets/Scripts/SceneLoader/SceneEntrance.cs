@@ -9,7 +9,7 @@ public class SceneEntrance : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (transitionName == PlayerController.instance.areaTransitionName)
+        if (transitionName == PlayerController.instance.levelTransitionname)
         {
             PlayerController.instance.transform.position = transform.position;
             PlayerController.instance.GetComponent<Animator>().SetBool("walking", false);            

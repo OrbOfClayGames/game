@@ -7,7 +7,15 @@ using Utilities.Inspector;
 public class SceneLoader : MonoBehaviour
 {
     public SceneField sceneToLoad;
-    public string areaTransitionName;
+
+    public string levelTransitionname;
+
+    public SceneEntrance sceneEntrance;
+
+    private void Start()
+    {
+        sceneEntrance.transitionName = levelTransitionname;
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,7 +23,7 @@ public class SceneLoader : MonoBehaviour
         {
             SceneManager.LoadScene(sceneToLoad);
 
-            PlayerController.instance.areaTransitionName = areaTransitionName;
+            PlayerController.instance.levelTransitionname = levelTransitionname;
         }
 
         
