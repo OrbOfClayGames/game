@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,9 +11,9 @@ public class VillageData : ScriptableObject
         int multi = 1;
         foreach (var resource in resources)
         {
-            resourceCount.Add(resource, 500*multi++);
+            resourceCount.Add(resource, 500 * multi++);
         }
-        plotAllocation.Add("1stPlot","woodworker");
+        plotAllocation.Add("1stPlot", "woodworker");
 
     }
 
@@ -28,6 +27,19 @@ public class VillageData : ScriptableObject
     public int GetResourceCount(string resource)
     {
         return resourceCount[resource];
+    }
+
+    //modifies the resource with name key by the value given 
+    public void SetResourceCount(string key, int value)
+    {
+        if (resourceCount.ContainsKey(key))
+        {
+            resourceCount[key] = resourceCount[key] + value;
+        }
+        else
+        {
+            Debug.Log("key \"" + key + "\" does not exist in resourceCount: "+ System.String.Join(", ", resourceCount.Keys));
+        }
     }
 
     public bool CheckIfBuildable()
