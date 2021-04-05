@@ -17,11 +17,19 @@ public class SceneLoader : MonoBehaviour
         sceneEntrance.transitionName = levelTransitionname;
     }
 
+    public void LoadSceneAfterFadeToBlackFinished()
+    {
+        SceneManager.LoadScene(sceneToLoad);
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")
         {
-            SceneManager.LoadScene(sceneToLoad);
+            FindObjectOfType<ScreenFaderManager>().StartFadeToBlack();
+
+            //directly load scene if no fade to black required
+            //SceneManager.LoadScene(sceneToLoad);
 
             PlayerController.instance.levelTransitionname = levelTransitionname;
         }
