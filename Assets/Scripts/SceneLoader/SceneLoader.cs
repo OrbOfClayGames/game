@@ -27,7 +27,7 @@ public class SceneLoader : MonoBehaviour
         if(other.tag == "Player")
         {
             FindObjectOfType<ScreenFaderManager>().StartFadeToBlack();
-
+                        
             //directly load scene if no fade to black required
             //SceneManager.LoadScene(sceneToLoad);
 
