@@ -1,36 +1,38 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class VillageData : ScriptableObject
 {
-    private Dictionary<string, int> resourceCount = new Dictionary<string, int>();
+    private Dictionary<ResourceName, int> resourceCount = new Dictionary<ResourceName, int>();
     private Dictionary<string, string> plotAllocation = new Dictionary<string, string>();
 
-    public void PopulateDictionaries(string[] resources)
+    public void PopulateDictionaries()
     {
         int multi = 1;
-        foreach (var resource in resources)
+        foreach (ResourceName resource in Enum.GetValues(typeof(ResourceName)))
         {
             resourceCount.Add(resource, 500 * multi++);
         }
+        Debug.Log("resourceCount keys: " + string.Join(", ", resourceCount.Keys));
         plotAllocation.Add("1stPlot", "woodworker");
 
     }
     
     public string GetBuildingOnPlot(string button)
     {
-        Debug.Log(resourceCount["wood"]);
+        Debug.Log(resourceCount[ResourceName.Wood]);
         Debug.Log(plotAllocation[button]);
         return plotAllocation[button];
     }
 
-    public int GetResourceCount(string resource)
+    public int GetResourceCount(ResourceName resource)
     {
         return resourceCount[resource];
     }
 
     //modifies the resource with name key by the value given 
-    public void SetResourceCount(string key, int value)
+    public void SetResourceCount(ResourceName key, int value)
     {
         if (resourceCount.ContainsKey(key))
         {
