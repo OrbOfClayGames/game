@@ -7,7 +7,8 @@ namespace Village
     public class VillageData : ScriptableObject
     {
         private Dictionary<ResourceName, int> resourceCount = new Dictionary<ResourceName, int>();
-        private Dictionary<string, string> plotAllocation = new Dictionary<string, string>();
+        private List<Building> buildings = new List<Building>();
+        private Dictionary<string, Building> plotAllocation = new Dictionary<string, Building>();
 
         public VillageData()
         {
@@ -16,19 +17,19 @@ namespace Village
 
         public void PopulateDictionaries()
         {
+            CreateBuildings();
             System.Random multi = new System.Random();
             foreach (ResourceName resource in Enum.GetValues(typeof(ResourceName)))
             {
                 resourceCount.Add(resource, multi.Next(600, 2000));
             }
-            plotAllocation.Add("1stPlot", "woodworker");
-
+            plotAllocation.Add("1stPlot", buildings.Find(building => building.Name == "woodworker shack"));
         }
 
-        public string GetBuildingOnPlot(string button)
+        public Building GetBuildingOnPlot(string button)
         {
             Debug.Log(resourceCount[ResourceName.Wood]);
-            Debug.Log(plotAllocation[button]);
+            Debug.Log(plotAllocation[button].Name);
             return plotAllocation[button];
         }
 
@@ -49,6 +50,26 @@ namespace Village
                 Debug.Log("key \"" + key + "\" does not exist in resourceCount: " + string.Join(", ", resourceCount.Keys));
             }
         }
+
+        //Data for all Buildings
+        private void CreateBuildings()
+        {
+            buildings.Add(new Building("woodworker shack", ResourceName.Wood, 1, false, null, new Dictionary<ResourceName, int> {
+                {ResourceName.Wood, 100 }}));
+            buildings.Add(new Building("stoneworker shack", ResourceName.Stone, 1, false, null, new Dictionary<ResourceName, int> {
+                {ResourceName.Wood, 250}}));
+            buildings.Add(new Building("leatherworker shack", ResourceName.Leather, 1, false, null, new Dictionary<ResourceName, int> {
+                {ResourceName.Wood, 150}}));
+            buildings.Add(new Building("clayworker shack", ResourceName.Clay, 1, false, null, new Dictionary<ResourceName, int> {
+                {ResourceName.Wood, 100},
+                { ResourceName.Stone,50}}));
+            buildings.Add(new Building("blacksmith shack", ResourceName.Metal, 1, false, null, new Dictionary<ResourceName, int> {
+                {ResourceName.Wood, 250},
+                {ResourceName.Leather, 100},
+                {ResourceName.Stone, 125}}));
+        }
+
+
     }
 
 }

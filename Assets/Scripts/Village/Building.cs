@@ -12,7 +12,7 @@ namespace Village
         public bool HasSpecialRequirement { get; }
         public List<BuildingRequirement> Requirements { get; }
 
-        public Building(string name, ResourceName typ, int tier, Dictionary<ResourceName, int> resourcesToBuild, bool hasSpecialRequirement, List<BuildingRequirement> requirements)
+        public Building(string name, ResourceName typ, int tier, bool hasSpecialRequirement, List<BuildingRequirement> requirements, Dictionary<ResourceName, int> resourcesToBuild)
         {
             Name = name;
             Description = name;
@@ -23,7 +23,7 @@ namespace Village
             Requirements = requirements;
         }
 
-        public Building(string name, string description, ResourceName typ, int tier, Dictionary<ResourceName, int> resourcesToBuild, bool hasSpecialRequirement, List<BuildingRequirement> requirements)
+        public Building(string name, string description, ResourceName typ, int tier, bool hasSpecialRequirement, List<BuildingRequirement> requirements, Dictionary<ResourceName, int> resourcesToBuild)
         {
             Name = name;
             Description = description;
