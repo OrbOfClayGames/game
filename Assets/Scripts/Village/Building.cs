@@ -9,30 +9,47 @@ namespace Village
         public ResourceName Typ { get; }
         public int Tier { get; }
         public Dictionary<ResourceName, int> ResourcesToBuild { get; }
-        public bool HasSpecialRequirement { get; }
         public List<BuildingRequirement> Requirements { get; }
-
-        public Building(string name, ResourceName typ, int tier, bool hasSpecialRequirement, List<BuildingRequirement> requirements, Dictionary<ResourceName, int> resourcesToBuild)
+        
+        //no Description & no Requirement
+        public Building(string name, ResourceName typ, int tier, Dictionary<ResourceName, int> resourcesToBuild)
         {
             Name = name;
             Description = name;
             Typ = typ;
             Tier = tier;
             ResourcesToBuild = resourcesToBuild;
-            HasSpecialRequirement = hasSpecialRequirement;
-            Requirements = requirements;
+            Requirements = new List<BuildingRequirement>();
         }
-
-        public Building(string name, string description, ResourceName typ, int tier, bool hasSpecialRequirement, List<BuildingRequirement> requirements, Dictionary<ResourceName, int> resourcesToBuild)
+        //no Requirement
+        public Building(string name, string description, ResourceName typ, int tier, Dictionary<ResourceName, int> resourcesToBuild)
         {
             Name = name;
             Description = description;
             Typ = typ;
             Tier = tier;
             ResourcesToBuild = resourcesToBuild;
-            HasSpecialRequirement = hasSpecialRequirement;
+            Requirements = new List<BuildingRequirement>();
+        }
+        //no Description
+        public Building(string name, ResourceName typ, int tier, List<BuildingRequirement> requirements, Dictionary<ResourceName, int> resourcesToBuild)
+        {
+            Name = name;
+            Description = name;
+            Typ = typ;
+            Tier = tier;
+            ResourcesToBuild = resourcesToBuild;
+            Requirements = requirements;
+        }
+        //all Fields
+        public Building(string name, string description, ResourceName typ, int tier, List<BuildingRequirement> requirements, Dictionary<ResourceName, int> resourcesToBuild)
+        {
+            Name = name;
+            Description = description;
+            Typ = typ;
+            Tier = tier;
+            ResourcesToBuild = resourcesToBuild;
             Requirements = requirements;
         }
     }
 }
-

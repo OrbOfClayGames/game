@@ -54,19 +54,27 @@ namespace Village
         //Data for all Buildings
         private void CreateBuildings()
         {
-            buildings.Add(new Building("woodworker shack", ResourceName.Wood, 1, false, null, new Dictionary<ResourceName, int> {
+            //T1 basic buildings
+            buildings.Add(new Building("woodworker shack", ResourceName.Wood, 1, new Dictionary<ResourceName, int> {
                 {ResourceName.Wood, 100 }}));
-            buildings.Add(new Building("stoneworker shack", ResourceName.Stone, 1, false, null, new Dictionary<ResourceName, int> {
+            buildings.Add(new Building("stoneworker shack", ResourceName.Stone, 1, new Dictionary<ResourceName, int> {
                 {ResourceName.Wood, 250}}));
-            buildings.Add(new Building("leatherworker shack", ResourceName.Leather, 1, false, null, new Dictionary<ResourceName, int> {
+            buildings.Add(new Building("leatherworker shack", ResourceName.Leather, 1, new Dictionary<ResourceName, int> {
                 {ResourceName.Wood, 150}}));
-            buildings.Add(new Building("clayworker shack", ResourceName.Clay, 1, false, null, new Dictionary<ResourceName, int> {
+            buildings.Add(new Building("clayworker shack", ResourceName.Clay, 1, new Dictionary<ResourceName, int> {
                 {ResourceName.Wood, 100},
                 { ResourceName.Stone,50}}));
-            buildings.Add(new Building("blacksmith shack", ResourceName.Metal, 1, false, null, new Dictionary<ResourceName, int> {
+            buildings.Add(new Building("blacksmith shack", ResourceName.Metal, 1, new Dictionary<ResourceName, int> {
                 {ResourceName.Wood, 250},
                 {ResourceName.Leather, 100},
                 {ResourceName.Stone, 125}}));
+            //T1 advanced buildings
+            /*TODO: kommt noch */
+            //T2 basic buildings
+            buildings.Add(new Building("woodworker shop", ResourceName.Wood, 2, new Dictionary<ResourceName, int> {
+                {ResourceName.Wood, 350 },
+                {ResourceName.Leather, 250},
+                {ResourceName.Stone, 250}, {ResourceName.Metal,150}}));
         }
 
 
