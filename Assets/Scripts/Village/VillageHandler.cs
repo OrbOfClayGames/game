@@ -3,65 +3,67 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class VillageHandler : MonoBehaviour
+namespace Village
 {
-    [SerializeField] private Text[] resourceTexts;
-    [SerializeField] private Image[] resourceImages;
-    [SerializeField] private Building[] buildingList;
-    //private readonly string[] resourceStrings = { "wood", "stone", "clay", "metal", "leather" };
-    private VillageData villageData;
-    // Start is called before the first frame update
-    void Start()
+    public class VillageHandler : MonoBehaviour
     {
-        villageData = ScriptableObject.CreateInstance<VillageData>();
-        villageData.PopulateDictionaries();
-        LoadAllResources();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    private void LoadAllResources()
-    {
-        for (int i = 0; i < Enum.GetNames(typeof(ResourceName)).Length; i++)
+        [SerializeField] private Text[] resourceTexts;
+        [SerializeField] private Image[] resourceImages;
+        [SerializeField] private Building[] buildingList;
+        //private readonly string[] resourceStrings = { "wood", "stone", "clay", "metal", "leather" };
+        private VillageData villageData;
+        // Start is called before the first frame update
+        void Start()
         {
-            int value = villageData.GetResourceCount((ResourceName)i);
-            resourceTexts[i].text = value.ToString();
+            villageData = ScriptableObject.CreateInstance<VillageData>();
+            LoadAllResources();
         }
-    }
 
-    private void LoadResourceCount(ResourceName resource)
-    {
-        // int index = Array.IndexOf(resourceStrings, resource);
-        // if (index == -1)
-        // {
-        //     Debug.Log("The resource \"" + resource + "\" does not exist in resourceStrings: " + string.Join(", ", resourceStrings));
-        // }
-        // else
-        // {
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+
+        private void LoadAllResources()
+        {
+            for (int i = 0; i < Enum.GetNames(typeof(ResourceName)).Length; i++)
+            {
+                int value = villageData.GetResourceCount((ResourceName)i);
+                resourceTexts[i].text = value.ToString();
+            }
+        }
+
+        private void LoadResourceCount(ResourceName resource)
+        {
+            // int index = Array.IndexOf(resourceStrings, resource);
+            // if (index == -1)
+            // {
+            //     Debug.Log("The resource \"" + resource + "\" does not exist in resourceStrings: " + string.Join(", ", resourceStrings));
+            // }
+            // else
+            // {
             int value = villageData.GetResourceCount(resource);
             resourceTexts[(int)resource].text = value.ToString();
-        // }
+            // }
 
-    }
+        }
 
-    private void UpdateResourceCount(ResourceName resource, int value)
-    {
-        villageData.SetResourceCount(resource, value);
-        LoadResourceCount(resource);
-    }
+        private void UpdateResourceCount(ResourceName resource, int value)
+        {
+            villageData.SetResourceCount(resource, value);
+            LoadResourceCount(resource);
+        }
 
-    public void OnPlotButtonClick()
-    {
-        string currentButton = EventSystem.current.currentSelectedGameObject.name;
-        villageData.GetBuildingOnPlot(currentButton);
-    }
+        public void OnPlotButtonClick()
+        {
+            string currentButton = EventSystem.current.currentSelectedGameObject.name;
+            villageData.GetBuildingOnPlot(currentButton);
+        }
 
-    public void OnResourceButtonClick()
-    {
-        UpdateResourceCount(ResourceName.Wood, 333);
+        public void OnResourceButtonClick()
+        {
+            UpdateResourceCount(ResourceName.Wood, 333);
+        }
     }
 }

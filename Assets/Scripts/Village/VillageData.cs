@@ -2,45 +2,54 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VillageData : ScriptableObject
+namespace Village
 {
-    private Dictionary<ResourceName, int> resourceCount = new Dictionary<ResourceName, int>();
-    private Dictionary<string, string> plotAllocation = new Dictionary<string, string>();
-
-    public void PopulateDictionaries()
+    public class VillageData : ScriptableObject
     {
-        int multi = 1;
-        foreach (ResourceName resource in Enum.GetValues(typeof(ResourceName)))
+        private Dictionary<ResourceName, int> resourceCount = new Dictionary<ResourceName, int>();
+        private Dictionary<string, string> plotAllocation = new Dictionary<string, string>();
+
+        public VillageData()
         {
-            resourceCount.Add(resource, 500 * multi++);
+            PopulateDictionaries();
         }
-        Debug.Log("resourceCount keys: " + string.Join(", ", resourceCount.Keys));
-        plotAllocation.Add("1stPlot", "woodworker");
 
-    }
-    
-    public string GetBuildingOnPlot(string button)
-    {
-        Debug.Log(resourceCount[ResourceName.Wood]);
-        Debug.Log(plotAllocation[button]);
-        return plotAllocation[button];
-    }
-
-    public int GetResourceCount(ResourceName resource)
-    {
-        return resourceCount[resource];
-    }
-
-    //modifies the resource with name key by the value given 
-    public void SetResourceCount(ResourceName key, int value)
-    {
-        if (resourceCount.ContainsKey(key))
+        public void PopulateDictionaries()
         {
-            resourceCount[key] = resourceCount[key] + value;
+            System.Random multi = new System.Random();
+            foreach (ResourceName resource in Enum.GetValues(typeof(ResourceName)))
+            {
+                resourceCount.Add(resource, multi.Next(600, 2000));
+            }
+            plotAllocation.Add("1stPlot", "woodworker");
+
         }
-        else
+
+        public string GetBuildingOnPlot(string button)
         {
-            Debug.Log("key \"" + key + "\" does not exist in resourceCount: " + string.Join(", ", resourceCount.Keys));
+            Debug.Log(resourceCount[ResourceName.Wood]);
+            Debug.Log(plotAllocation[button]);
+            return plotAllocation[button];
+        }
+
+        public int GetResourceCount(ResourceName resource)
+        {
+            return resourceCount[resource];
+        }
+
+        //modifies the resource with name key by the value given 
+        public void SetResourceCount(ResourceName key, int value)
+        {
+            if (resourceCount.ContainsKey(key))
+            {
+                resourceCount[key] = resourceCount[key] + value;
+            }
+            else
+            {
+                Debug.Log("key \"" + key + "\" does not exist in resourceCount: " + string.Join(", ", resourceCount.Keys));
+            }
         }
     }
+
 }
+
