@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Fighter : MonoBehaviour
 {
-    public void Attack()
+    public void Attack(CombatTarget target)
     {
-        Debug.Log(GetComponent<Fighter>().gameObject.name + "Attack!");
+        Debug.Log(GetComponent<Fighter>().gameObject.name + " attacks " + target);
     }
 }

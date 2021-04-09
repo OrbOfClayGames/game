@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,12 +28,34 @@ public class PlayerController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {            
-            if (Input.GetMouseButtonDown(0))
-            {
-                StartWalking();
-            }        
+    {
+        InteractWithMovement();
+        //InteractWithCombat();
+    }    
+
+    private void InteractWithMovement()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            StartWalking();
+        }
+    }   
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemy")
+        {
+            CombatTarget target = collision.gameObject.GetComponent<CombatTarget>();
+            GetComponent<Fighter>().Attack(target);
+            GetComponent<Mover>().StopWalking();
+        }
+            
     }
+
+    /*private void InteractWithCombat()
+    {
+        
+    }*/       
 
     private void StartWalking()
     {

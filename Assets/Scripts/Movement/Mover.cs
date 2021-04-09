@@ -23,4 +23,11 @@ public class Mover : MonoBehaviour
         cachedRigidBody2D.velocity = playerVelocity;        
         cachedAnimator.SetBool("walking", true);
     }
+
+    public void StopWalking()
+    {
+        Vector2 playerVelocity = new Vector2(0f, 0f);
+        cachedRigidBody2D.velocity = playerVelocity;
+        cachedAnimator.SetBool("walking", false);
+    }
 }
