@@ -2378,10 +2378,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3857930192267601191, guid: 86b775d35331d0240b792bffcc97bb8c, type: 3}
-      propertyPath: m_SortingLayer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3857930192267601240, guid: 86b775d35331d0240b792bffcc97bb8c, type: 3}
       propertyPath: m_RootOrder
       value: 4

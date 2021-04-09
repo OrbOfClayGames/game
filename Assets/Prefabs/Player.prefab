@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3857930192267601241}
   - component: {fileID: 8604771669813154595}
   - component: {fileID: 5571518661636846022}
+  - component: {fileID: 6095882844078027839}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -119,8 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5646937de14027846a449b42a843ec42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xVelocity: 1.5
-  areaTransitionName: 
+  levelTransitionname: 
   hasStarted: 0
 --- !u!95 &8604771669813154595
 Animator:
@@ -167,3 +167,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.40625, y: 0.625}
   m_EdgeRadius: 0
+--- !u!114 &6095882844078027839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3857930192267601190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10df41de204b7c849a620741d8c08632, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xVelocity: 1.5
