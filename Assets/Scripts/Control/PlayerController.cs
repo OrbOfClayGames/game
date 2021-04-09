@@ -6,8 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public string levelTransitionname;
 
-    // state
-    public bool hasStarted = false;    
+    // state    
 
     public static PlayerController instance;
 
