@@ -121,7 +121,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1325339417670609968}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -5395825201323625452}
+        m_TargetAssemblyTypeName: Village.Plot, Assembly-CSharp
+        m_MethodName: OnPlotButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &-5395825201323625452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,6 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab012b2f95a7f47438f7fa4c74bef3d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dropDown: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
 --- !u!1 &1325339417804149390
 GameObject:
   m_ObjectHideFlags: 0

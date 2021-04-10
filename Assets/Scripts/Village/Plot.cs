@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 namespace Village
 {
@@ -7,6 +9,7 @@ namespace Village
     {
         private VillageHandler villageHandler;
 
+        [SerializeField] private Dropdown dropDown;
         private Building allocatedBuilding;
         private Building nextUpgrade;
         // Start is called before the first frame update
@@ -27,13 +30,18 @@ namespace Village
             {
                 villageHandler = GameObject.FindObjectOfType<VillageHandler>();
             }
+            if (IsPlotEmpty())
+            {
+                Debug.Log("true");
+                Debug.Log(dropDown.name);
+                dropDown = FindObjectOfType<Dropdown>();
+                dropDown.ClearOptions();
+                dropDown.gameObject.SetActive(false);
+            }
             string currentButton = EventSystem.current.currentSelectedGameObject.name;
             villageHandler.VillageData.GetBuildingOnPlot(currentButton);
 
-            if (IsPlotEmpty())
-            {
-                Debug.Log("Empty");
-            }
+            
         }
 
         private bool IsPlotEmpty()
