@@ -6,6 +6,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public string levelTransitionname;
+    public Transform rayOriginPoint;
+    private Vector2 rayDirection = new Vector2 (10, 0);
 
     // state
     public static PlayerController instance;
@@ -28,8 +30,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        InteractWithMovement();
-        //InteractWithCombat();
+        InteractWithMovement();        
+        InteractWithCombat();
+
     }    
 
     private void InteractWithMovement()
@@ -40,7 +43,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Enemy")
         {
@@ -50,12 +53,21 @@ public class PlayerController : MonoBehaviour
             //Collider2D collisions = collision;
         }
 
-    }
-        
-    /*private void InteractWithCombat()
-    {
-        
     }*/
+
+    private void InteractWithCombat()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(rayOriginPoint.position, rayDirection, 0.5f);
+        if (hit == true)
+        {
+            if (hit.collider.CompareTag("Enemy"))
+            {
+                CombatTarget target = hit.collider.gameObject.GetComponent<CombatTarget>();
+                GetComponent<Fighter>().Attack(target);
+                GetComponent<Mover>().StopWalking();
+            }
+        }
+    }
 
     private void StartWalking()
     {
