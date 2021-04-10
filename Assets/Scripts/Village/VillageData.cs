@@ -52,6 +52,34 @@ namespace Village
             }
         }
 
+        private List<ResourceName> GetUnplacedBuildingTypes()
+        {
+            List<ResourceName> unplacedResourceTyps = new List<ResourceName>();
+            foreach (ResourceName resource in Enum.GetValues(typeof(ResourceName)))
+            {
+                unplacedResourceTyps.Add(resource);
+            }
+
+            foreach (var keyBuilding in plotAllocation)
+            {
+                unplacedResourceTyps.Remove(keyBuilding.Value.Typ);
+            }
+
+            return unplacedResourceTyps;
+        }
+
+        public List<string> GetUnplacedBuildings()
+        {
+            List<string> unplacedBuildings = new List<string>();
+            List<ResourceName> unplacedResourceTyps = GetUnplacedBuildingTypes();
+            foreach (var resourceTyp in unplacedResourceTyps)
+            {
+               unplacedBuildings.Add(buildings.Find(building => building.Typ == resourceTyp && building.Tier == 1).Description);
+
+            }
+            return unplacedBuildings;
+        }
+
         //Data for all Buildings
         private void CreateBuildings()
         {

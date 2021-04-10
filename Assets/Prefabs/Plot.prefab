@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab012b2f95a7f47438f7fa4c74bef3d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropDown: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
+  dropDown: {fileID: 0}
 --- !u!1 &1325339417804149390
 GameObject:
   m_ObjectHideFlags: 0

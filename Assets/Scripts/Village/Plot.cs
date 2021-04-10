@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -8,6 +10,7 @@ namespace Village
     public class Plot : MonoBehaviour
     {
         private VillageHandler villageHandler;
+        private VillageData villageData;
 
         [SerializeField] private Dropdown dropDown;
         private Building allocatedBuilding;
@@ -28,18 +31,31 @@ namespace Village
         {
             if (!villageHandler)
             {
-                villageHandler = GameObject.FindObjectOfType<VillageHandler>();
+                villageHandler = FindObjectOfType<VillageHandler>();
+                villageData = villageHandler.VillageData;
             }
+            //testing start
+            // if (!dropDown.gameObject.activeSelf)
+            // {
+            //     dropDown.gameObject.SetActive(true);
+            //
+            // }
+            // else
+            // {
+            //     dropDown.gameObject.SetActive(false);
+            //
+            // }
             if (IsPlotEmpty())
             {
-                Debug.Log("true");
-                Debug.Log(dropDown.name);
-                dropDown = FindObjectOfType<Dropdown>();
-                dropDown.ClearOptions();
-                dropDown.gameObject.SetActive(false);
+                dropDown.AddOptions(villageData.GetUnplacedBuildings());
+                dropDown.gameObject.SetActive(true);
+
             }
+
+            
+            //testing stop
             string currentButton = EventSystem.current.currentSelectedGameObject.name;
-            villageHandler.VillageData.GetBuildingOnPlot(currentButton);
+            villageData.GetBuildingOnPlot(currentButton);
 
             
         }
