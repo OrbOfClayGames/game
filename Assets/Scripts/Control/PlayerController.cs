@@ -63,8 +63,8 @@ public class PlayerController : MonoBehaviour
             if (hit.collider.CompareTag("Enemy"))
             {
                 GetComponent<Mover>().StopWalking();
-                CombatTarget target = hit.collider.gameObject.GetComponent<CombatTarget>();
-                GetComponent<Fighter>().Attack(target);                                
+                CombatTarget combatTarget = hit.collider.gameObject.GetComponent<CombatTarget>();                
+                GetComponent<Fighter>().Attack(combatTarget);                                
             }
         }
     }
