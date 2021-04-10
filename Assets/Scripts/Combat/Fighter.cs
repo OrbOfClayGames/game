@@ -17,10 +17,12 @@ public class Fighter : MonoBehaviour
 
     public void Attack(CombatTarget target)
     {
+        if (target == null) return;
+
         if (timeSinceLastAttack > timeBetweenAttacks && attackNumber<3)
         {
-            Debug.Log(GetComponent<Fighter>().gameObject.name + " attacks " + target);
             GetComponent<Animator>().SetTrigger("attack");
+            Debug.Log(GetComponent<Fighter>().gameObject.name + " attacks " + target);
             timeSinceLastAttack = 0;
             attackNumber++;
         }
