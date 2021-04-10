@@ -11,11 +11,13 @@ namespace Village
         [SerializeField] private Image[] resourceImages;
         [SerializeField] private Building[] buildingList;
         //private readonly string[] resourceStrings = { "wood", "stone", "clay", "metal", "leather" };
-        private VillageData villageData;
+
+        public VillageData VillageData { get; private set; }
+
         // Start is called before the first frame update
         void Start()
         {
-            villageData = ScriptableObject.CreateInstance<VillageData>();
+            VillageData = ScriptableObject.CreateInstance<VillageData>();
             LoadAllResources();
         }
 
@@ -29,7 +31,7 @@ namespace Village
         {
             for (int i = 0; i < Enum.GetNames(typeof(ResourceName)).Length; i++)
             {
-                int value = villageData.GetResourceCount((ResourceName)i);
+                int value = VillageData.GetResourceCount((ResourceName)i);
                 resourceTexts[i].text = value.ToString();
             }
         }
@@ -43,7 +45,7 @@ namespace Village
             // }
             // else
             // {
-            int value = villageData.GetResourceCount(resource);
+            int value = VillageData.GetResourceCount(resource);
             resourceTexts[(int)resource].text = value.ToString();
             // }
 
@@ -51,15 +53,11 @@ namespace Village
 
         private void UpdateResourceCount(ResourceName resource, int value)
         {
-            villageData.SetResourceCount(resource, value);
+            VillageData.SetResourceCount(resource, value);
             LoadResourceCount(resource);
         }
 
-        public void OnPlotButtonClick()
-        {
-            string currentButton = EventSystem.current.currentSelectedGameObject.name;
-            villageData.GetBuildingOnPlot(currentButton);
-        }
+        
 
         public void OnResourceButtonClick()
         {

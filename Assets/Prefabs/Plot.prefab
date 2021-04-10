@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 1325339417670609935}
   - component: {fileID: 1325339417670609968}
   - component: {fileID: 1325339417670609969}
+  - component: {fileID: -5395825201323625452}
   m_Layer: 5
-  m_Name: 1stPlot
+  m_Name: Plot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,6 +122,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-5395825201323625452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325339417670609971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab012b2f95a7f47438f7fa4c74bef3d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1325339417804149390
 GameObject:
   m_ObjectHideFlags: 0

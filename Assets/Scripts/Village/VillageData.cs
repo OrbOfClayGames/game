@@ -8,6 +8,7 @@ namespace Village
     {
         private Dictionary<ResourceName, int> resourceCount = new Dictionary<ResourceName, int>();
         private List<Building> buildings = new List<Building>();
+        //TODO: has to be saved
         private Dictionary<string, Building> plotAllocation = new Dictionary<string, Building>();
 
         public VillageData()
@@ -74,11 +75,8 @@ namespace Village
             buildings.Add(new Building("woodworker shop", ResourceName.Wood, 2, new Dictionary<ResourceName, int> {
                 {ResourceName.Wood, 350 },
                 {ResourceName.Leather, 250},
-                {ResourceName.Stone, 250}, {ResourceName.Metal,150}}));
+                {ResourceName.Stone, 250},
+                { ResourceName.Metal,150}}));
         }
-
-
     }
-
 }
-
