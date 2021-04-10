@@ -7,8 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public string levelTransitionname;
 
-    // state    
-
+    // state
     public static PlayerController instance;
 
     // Start is called before the first frame update
@@ -39,7 +38,7 @@ public class PlayerController : MonoBehaviour
         {
             StartWalking();
         }
-    }   
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -48,17 +47,18 @@ public class PlayerController : MonoBehaviour
             CombatTarget target = collision.gameObject.GetComponent<CombatTarget>();
             GetComponent<Fighter>().Attack(target);
             GetComponent<Mover>().StopWalking();
+            //Collider2D collisions = collision;
         }
-            
-    }
 
+    }
+        
     /*private void InteractWithCombat()
     {
         
-    }*/       
+    }*/
 
     private void StartWalking()
     {
-        GetComponent<Mover>().Walk();
+        GetComponent<Mover>().Walk();        
     }
 }
