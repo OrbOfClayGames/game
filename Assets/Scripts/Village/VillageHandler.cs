@@ -10,8 +10,8 @@ namespace Village
         [SerializeField] private Text[] resourceTexts;
         [SerializeField] private Image[] resourceImages;
         [SerializeField] private Building[] buildingList;
-        //private readonly string[] resourceStrings = { "wood", "stone", "clay", "metal", "leather" };
 
+        public Button CurrentButton { get; set; }
         public VillageData VillageData { get; private set; }
 
         // Start is called before the first frame update
@@ -62,6 +62,11 @@ namespace Village
         public void OnResourceButtonClick()
         {
             UpdateResourceCount(ResourceName.Wood, 333);
+        }
+
+        public void OnDropDownValueChange()
+        {
+            CurrentButton.SendMessage("execute");
         }
     }
 }

@@ -3,7 +3,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 namespace Village
 {
@@ -27,35 +26,25 @@ namespace Village
 
         }
 
-        public void OnPlotButtonClick()
+        public void OnPlotButtonClick(Button button)
         {
             if (!villageHandler)
             {
                 villageHandler = FindObjectOfType<VillageHandler>();
                 villageData = villageHandler.VillageData;
             }
-            //testing start
-            // if (!dropDown.gameObject.activeSelf)
-            // {
-            //     dropDown.gameObject.SetActive(true);
-            //
-            // }
-            // else
-            // {
-            //     dropDown.gameObject.SetActive(false);
-            //
-            // }
+
             if (IsPlotEmpty())
             {
+                dropDown.ClearOptions();
                 dropDown.AddOptions(villageData.GetUnplacedBuildings());
                 dropDown.gameObject.SetActive(true);
+                villageHandler.CurrentButton = button;
 
             }
-
-            
-            //testing stop
-            string currentButton = EventSystem.current.currentSelectedGameObject.name;
-            villageData.GetBuildingOnPlot(currentButton);
+            var image = Resources.Load<Sprite>("village/placeholderT1");
+            button.image.sprite = image;
+           // villageData.GetBuildingOnPlot(button.name);
 
             
         }
@@ -65,6 +54,13 @@ namespace Village
             //struct can't be null, so we have to check if resourcesToBuild was never assigned
             return allocatedBuilding.ResourcesToBuild is null;
         }
+
+        public void execute()
+        {
+            print("Message was sent.");
+            print(dropDown.options[dropDown.value].text);
+        }
+
     }
 }
 
