@@ -22,7 +22,15 @@ public class Fighter : MonoBehaviour
         if (GetComponent<PlayerController>().battle)
         {
             StartCoroutine(Attacking(combatTarget));
+            if (combatTarget.GetComponent<Health>().isDead)
+            {
+                StopCoroutine(Attacking(combatTarget));
+                GetComponent<PlayerController>().battle = false;
+                Destroy(combatTarget.gameObject);
+            }
         }
+
+        
     }
 
 
@@ -36,9 +44,10 @@ public class Fighter : MonoBehaviour
             Debug.Log(GetComponent<Fighter>().gameObject.name + " attacks " + combatTarget);
             timeSinceLastAttack = 0;
             target = combatTarget.transform;
-            yield return new WaitForSeconds(timeBetweenAttacks);
+            yield return new WaitForSeconds(timeBetweenAttacks);            
             attacking = false;
         }
+
         
     }
 

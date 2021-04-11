@@ -6,12 +6,24 @@ public class Health : MonoBehaviour
 {
     [SerializeField] float health = 100f;
 
+    public bool isDead = false;
+
     public void TakeDamage(float damage)
     {
         health = Mathf.Max (health - damage, 0);
         Debug.Log(health);
+        if(health == 0)
+        {
+            Die();
+        }
     }
     
+    private void Die()
+    {
+        if (isDead) return;
+        isDead = true;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
