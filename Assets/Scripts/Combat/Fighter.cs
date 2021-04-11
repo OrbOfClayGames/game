@@ -21,28 +21,31 @@ public class Fighter : MonoBehaviour
 
         if (GetComponent<PlayerController>().battle)
         {
-            StartCoroutine(Attacking(combatTarget));
+            Attacking(combatTarget);
+            //StartCoroutine(Attacking(combatTarget));
             if (combatTarget.GetComponent<Health>().isDead)
             {
-                StopCoroutine(Attacking(combatTarget));
+                //Attacking(combatTarget);
+                //StopCoroutine(Attacking(combatTarget));
                 GetComponent<PlayerController>().battle = false;
                 Destroy(combatTarget.gameObject, 1f);
             }
         }
     }
 
-    IEnumerator Attacking(CombatTarget combatTarget)
+    //IEnumerator Attacking(CombatTarget combatTarget)
+    public void Attacking(CombatTarget combatTarget)
     {
-        if (!attacking)
+        if (timeSinceLastAttack > timeBetweenAttacks)
         {
-            attacking = true;
+            //attacking = true;
             //this triggers the Hit() event
             GetComponent<Animator>().SetTrigger("attack");
             Debug.Log(GetComponent<Fighter>().gameObject.name + " attacks " + combatTarget);
             timeSinceLastAttack = 0;
             target = combatTarget.transform;
-            yield return new WaitForSeconds(timeBetweenAttacks);            
-            attacking = false;
+            //yield return new WaitForSeconds(timeBetweenAttacks);            
+            //attacking = false;
         }
     }
 
