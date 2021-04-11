@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public Transform rayOriginPoint;
     private Vector2 rayDirection = new Vector2 (1, 0);
 
+    public bool battle;
+
     // state
     public static PlayerController instance;
 
@@ -31,7 +33,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         InteractWithMovement();        
-        InteractWithCombat();
+        //InteractWithCombat();
 
     }    
 
@@ -43,19 +45,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    /*private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Enemy")
         {
-            CombatTarget target = collision.gameObject.GetComponent<CombatTarget>();
-            GetComponent<Fighter>().Attack(target);
+            battle = true;
+            CombatTarget combatTarget = collision.gameObject.GetComponent<CombatTarget>();
+            GetComponent<Fighter>().combatTarget = combatTarget;
+            //Debug.Log(combatTarget);
+            //GetComponent<Fighter>().Attack(combatTarget);            
+            //StartCoroutine(GetComponent<Fighter>().Attacking(combatTarget));
             GetComponent<Mover>().StopWalking();
             //Collider2D collisions = collision;
         }
 
-    }*/
+    }
 
-    private void InteractWithCombat()
+    /*private void InteractWithCombat()
     {
         RaycastHit2D hit = Physics2D.Raycast(rayOriginPoint.position, rayDirection, 0.1f);
         if (hit == true)
@@ -67,7 +73,7 @@ public class PlayerController : MonoBehaviour
                 GetComponent<Fighter>().Attack(combatTarget);                                
             }
         }
-    }
+    }*/
 
     private void StartWalking()
     {
