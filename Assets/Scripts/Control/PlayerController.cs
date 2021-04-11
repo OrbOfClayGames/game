@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public string levelTransitionname;
     public Transform rayOriginPoint;
-    private Vector2 rayDirection = new Vector2 (10, 0);
+    private Vector2 rayDirection = new Vector2 (1, 0);
 
     // state
     public static PlayerController instance;
@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
     private void InteractWithCombat()
     {
-        RaycastHit2D hit = Physics2D.Raycast(rayOriginPoint.position, rayDirection, 0.5f);
+        RaycastHit2D hit = Physics2D.Raycast(rayOriginPoint.position, rayDirection, 0.1f);
         if (hit == true)
         {
             if (hit.collider.CompareTag("Enemy"))

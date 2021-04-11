@@ -65,7 +65,7 @@ namespace Village
             villageData.PlotAllocation.Add(button.name, allocatedBuilding);
             var image = Resources.Load<Sprite>("village/"+allocatedBuilding.Name);
             button.image.sprite = image;
-            
+            //TODO: FIX first selected Value on dropdown FUUUUU
             print(dropDown.options[dropDown.value].text);
 
 

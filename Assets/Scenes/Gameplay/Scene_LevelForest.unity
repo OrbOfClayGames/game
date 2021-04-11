@@ -1161,7 +1161,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.43, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2537,6 +2537,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 598605804045784572, guid: 86b775d35331d0240b792bffcc97bb8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 598605804045784572, guid: 86b775d35331d0240b792bffcc97bb8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3857930192267601190, guid: 86b775d35331d0240b792bffcc97bb8c, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2589,6 +2597,10 @@ PrefabInstance:
       propertyPath: rayOriginPoint
       value: 
       objectReference: {fileID: 253608503}
+    - target: {fileID: 5571518661636846022, guid: 86b775d35331d0240b792bffcc97bb8c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86b775d35331d0240b792bffcc97bb8c, type: 3}
 --- !u!1001 &7064854542241797947

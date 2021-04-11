@@ -334,6 +334,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 700436453}
     m_Modifications:
+    - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2048817011}
+    - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnDropDownValueChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Village.VillageHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2470551633196141246, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
