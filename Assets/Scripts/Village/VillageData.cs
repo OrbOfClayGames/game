@@ -9,7 +9,7 @@ namespace Village
         private Dictionary<ResourceName, int> resourceCount = new Dictionary<ResourceName, int>();
         private List<Building> buildings = new List<Building>();
         //TODO: has to be saved
-        private Dictionary<string, Building> plotAllocation = new Dictionary<string, Building>();
+        public Dictionary<string, Building> PlotAllocation { get; } = new Dictionary<string, Building>();
 
         public VillageData()
         {
@@ -24,14 +24,13 @@ namespace Village
             {
                 resourceCount.Add(resource, multi.Next(600, 2000));
             }
-            plotAllocation.Add("1stPlot", buildings.Find(building => building.Name == "woodworker shack"));
         }
 
         public Building GetBuildingOnPlot(string button)
         {
             Debug.Log(resourceCount[ResourceName.Wood]);
-            Debug.Log(plotAllocation[button].Name);
-            return plotAllocation[button];
+            Debug.Log(PlotAllocation[button].Name);
+            return PlotAllocation[button];
         }
 
         public int GetResourceCount(ResourceName resource)
@@ -60,7 +59,7 @@ namespace Village
                 unplacedResourceTyps.Add(resource);
             }
 
-            foreach (var keyBuilding in plotAllocation)
+            foreach (var keyBuilding in PlotAllocation)
             {
                 unplacedResourceTyps.Remove(keyBuilding.Value.Typ);
             }
@@ -80,27 +79,32 @@ namespace Village
             return unplacedBuildings;
         }
 
+        public Building GetBuilding(Predicate<Building> match)
+        {
+            return buildings.Find(match);
+        }
+
         //Data for all Buildings
         private void CreateBuildings()
         {
             //T1 basic buildings
-            buildings.Add(new Building("woodworker shack", ResourceName.Wood, 1, new Dictionary<ResourceName, int> {
+            buildings.Add(new Building("woodT1","woodworker shack", ResourceName.Wood, 1, new Dictionary<ResourceName, int> {
                 {ResourceName.Wood, 100 }}));
-            buildings.Add(new Building("stoneworker shack", ResourceName.Stone, 1, new Dictionary<ResourceName, int> {
+            buildings.Add(new Building("stoneT1", "stoneworker shack", ResourceName.Stone, 1, new Dictionary<ResourceName, int> {
                 {ResourceName.Wood, 250}}));
-            buildings.Add(new Building("leatherworker shack", ResourceName.Leather, 1, new Dictionary<ResourceName, int> {
+            buildings.Add(new Building("leatherT1", "leatherworker shack", ResourceName.Leather, 1, new Dictionary<ResourceName, int> {
                 {ResourceName.Wood, 150}}));
-            buildings.Add(new Building("clayworker shack", ResourceName.Clay, 1, new Dictionary<ResourceName, int> {
+            buildings.Add(new Building("clayT1", "clayworker shack", ResourceName.Clay, 1, new Dictionary<ResourceName, int> {
                 {ResourceName.Wood, 100},
                 { ResourceName.Stone,50}}));
-            buildings.Add(new Building("blacksmith shack", ResourceName.Metal, 1, new Dictionary<ResourceName, int> {
+            buildings.Add(new Building("metalT1", "blacksmith shack", ResourceName.Metal, 1, new Dictionary<ResourceName, int> {
                 {ResourceName.Wood, 250},
                 {ResourceName.Leather, 100},
                 {ResourceName.Stone, 125}}));
             //T1 advanced buildings
             /*TODO: kommt noch */
             //T2 basic buildings
-            buildings.Add(new Building("woodworker shop", ResourceName.Wood, 2, new Dictionary<ResourceName, int> {
+            buildings.Add(new Building("woodT2", "woodworker shop", ResourceName.Wood, 2, new Dictionary<ResourceName, int> {
                 {ResourceName.Wood, 350 },
                 {ResourceName.Leather, 250},
                 {ResourceName.Stone, 250},

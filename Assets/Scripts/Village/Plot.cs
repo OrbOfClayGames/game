@@ -42,8 +42,7 @@ namespace Village
                 villageHandler.CurrentButton = button;
 
             }
-            var image = Resources.Load<Sprite>("village/placeholderT1");
-            button.image.sprite = image;
+            
            // villageData.GetBuildingOnPlot(button.name);
 
             
@@ -55,10 +54,21 @@ namespace Village
             return allocatedBuilding.ResourcesToBuild is null;
         }
 
-        public void execute()
+        public void execute(Button button)
         {
-            print("Message was sent.");
+            dropDown.gameObject.SetActive(false);
+            allocatedBuilding =
+                villageData.GetBuilding(building => building.Description == dropDown.options[dropDown.value].text);
+            //TODO: bei höchstem tier läuft nextUpgrade ins Leere, fix it
+            nextUpgrade = villageData.GetBuilding(building =>
+                building.Typ == allocatedBuilding.Typ && building.Tier == allocatedBuilding.Tier + 1);
+            villageData.PlotAllocation.Add(button.name, allocatedBuilding);
+            var image = Resources.Load<Sprite>("village/"+allocatedBuilding.Name);
+            button.image.sprite = image;
+            
             print(dropDown.options[dropDown.value].text);
+
+
         }
 
     }
