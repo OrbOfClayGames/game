@@ -11,16 +11,18 @@ public class PlayerController : MonoBehaviour
 
     public bool battle;
 
+    //CombatTarget combatTarget;
+
     // state
     public static PlayerController instance;
-
-    // Start is called before the first frame update
+        
     void Start()
     {
         if (instance == null)
         {
             instance = this;
         }
+
         else
         {
             Destroy(gameObject);
@@ -34,7 +36,6 @@ public class PlayerController : MonoBehaviour
     {
         InteractWithMovement();        
         //InteractWithCombat();
-
     }    
 
     private void InteractWithMovement()
@@ -50,15 +51,19 @@ public class PlayerController : MonoBehaviour
         if (collision.tag == "Enemy")
         {
             battle = true;
-            CombatTarget combatTarget = collision.gameObject.GetComponent<CombatTarget>();
-            GetComponent<Fighter>().combatTarget = combatTarget;
+            //CombatTarget combatTarget = collision.gameObject.GetComponent<CombatTarget>();
+            GetComponent<Fighter>().combatTarget = collision.gameObject.GetComponent<CombatTarget>();
             //Debug.Log(combatTarget);
             //GetComponent<Fighter>().Attack(combatTarget);            
             //StartCoroutine(GetComponent<Fighter>().Attacking(combatTarget));
             GetComponent<Mover>().StopWalking();
             //Collider2D collisions = collision;
         }
+    }
 
+    private void StartWalking()
+    {
+        GetComponent<Mover>().Walk();
     }
 
     /*private void InteractWithCombat()
@@ -74,9 +79,4 @@ public class PlayerController : MonoBehaviour
             }
         }
     }*/
-
-    private void StartWalking()
-    {
-        GetComponent<Mover>().Walk();        
-    }
 }

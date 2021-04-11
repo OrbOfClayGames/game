@@ -26,15 +26,12 @@ public class Fighter : MonoBehaviour
             {
                 StopCoroutine(Attacking(combatTarget));
                 GetComponent<PlayerController>().battle = false;
-                Destroy(combatTarget.gameObject);
+                Destroy(combatTarget.gameObject, 1f);
             }
         }
-
-        
     }
 
-
-    public IEnumerator Attacking(CombatTarget combatTarget)
+    IEnumerator Attacking(CombatTarget combatTarget)
     {
         if (!attacking)
         {
@@ -47,8 +44,6 @@ public class Fighter : MonoBehaviour
             yield return new WaitForSeconds(timeBetweenAttacks);            
             attacking = false;
         }
-
-        
     }
 
     /*public void Attack(CombatTarget combatTarget)
