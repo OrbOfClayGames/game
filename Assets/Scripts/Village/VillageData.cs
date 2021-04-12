@@ -7,7 +7,12 @@ namespace Village
 {
     public class VillageData : ScriptableObject
     {
+        //currently resource Inventory
         private Dictionary<ResourceName, int> resourceCount = new Dictionary<ResourceName, int>();
+        //currently building requirements
+
+        public List<BuildingRequirement> BuildingItems { get; } = new List<BuildingRequirement>();
+
         private List<Building> buildings = new List<Building>();
         //TODO: has to be saved
         public Dictionary<Button, Building> PlotAllocation { get; } = new Dictionary<Button, Building>();
@@ -20,11 +25,14 @@ namespace Village
         public void PopulateDictionaries()
         {
             CreateBuildings();
+            //random Values for resources and requirements
             System.Random multi = new System.Random();
             foreach (ResourceName resource in Enum.GetValues(typeof(ResourceName)))
             {
                 resourceCount.Add(resource, multi.Next(600, 2000));
             }
+            BuildingItems.Add(BuildingRequirement.MechanicalSaw);
+            BuildingItems.Add(BuildingRequirement.Millstone);
         }
 
         public Building GetBuildingOnPlot(Button button)
@@ -105,7 +113,10 @@ namespace Village
             //T1 advanced buildings
             /*TODO: kommt noch */
             //T2 basic buildings
-            buildings.Add(new Building("woodT2", "woodworker shop", ResourceName.Wood, 2, new Dictionary<ResourceName, int> {
+            buildings.Add(new Building("woodT2", "woodworker shop", ResourceName.Wood, 2, new List<BuildingRequirement>()
+                {
+                    BuildingRequirement.MechanicalSaw
+                }, new Dictionary<ResourceName, int> {
                 {ResourceName.Wood, 350 },
                 {ResourceName.Leather, 250},
                 {ResourceName.Stone, 250},

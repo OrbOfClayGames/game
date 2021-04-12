@@ -35,12 +35,16 @@ namespace Village
             if (IsPlotEmpty())
             {
                 dropDown.ClearOptions();
-                dropDown.AddOptions(new List<string>(){"pls pick a building:"});
+                dropDown.AddOptions(new List<string>() { "pls pick a building:" });
                 dropDown.AddOptions(villageData.GetUnplacedBuildings());
                 dropDown.gameObject.SetActive(true);
                 dropDown.Show();
                 villageHandler.CurrentButton = button;
 
+            }
+            else if (CheckUpgradeRequirements())
+            {
+                UpgradeBuilding(button);
             }
             else
             {
@@ -54,7 +58,7 @@ namespace Village
             return allocatedBuilding.ResourcesToBuild is null;
         }
         //TODO:umbenennen
-        public void execute(Button button)
+        public void AllocateBuildingToPlot(Button button)
         {
             dropDown.gameObject.SetActive(false);
             allocatedBuilding =
@@ -65,8 +69,45 @@ namespace Village
             villageData.PlotAllocation.Add(button, allocatedBuilding);
             var image = Resources.Load<Sprite>("village/" + allocatedBuilding.Name);
             button.image.sprite = image;
-            //TODO: FIX first selected Value on dropdown FUUUUU
             print(dropDown.options[dropDown.value].text);
+        }
+
+        private void UpgradeBuilding(Button button)
+        {
+            allocatedBuilding = nextUpgrade;
+            nextUpgrade = villageData.GetBuilding(building =>
+                building.Typ == allocatedBuilding.Typ && building.Tier == allocatedBuilding.Tier + 1);
+            var image = Resources.Load<Sprite>("village/" + allocatedBuilding.Name);
+            button.image.sprite = image;
+        }
+
+        private bool CheckUpgradeRequirements()
+        {
+            //TODO: Prompt player that there are no more upgrades for this building
+            if (nextUpgrade.ResourcesToBuild is null)
+            {
+                print("Highest Upgrade reached");
+                return false;
+            }
+
+            foreach (BuildingRequirement requirement in nextUpgrade.Requirements)
+            {
+                if (!villageData.BuildingItems.Contains(requirement))
+                {
+                    print("Missing Requirement Item: " +requirement);
+                    return false;
+                }
+            }
+
+            foreach (var resource in nextUpgrade.ResourcesToBuild)
+            {
+                if (villageData.GetResourceCount(resource.Key) < resource.Value)
+                {
+                    print("Not enough "+resource.Key +". You need "+(resource.Value-villageData.GetResourceCount(resource.Key))+" more "+resource.Key);
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }

@@ -40,17 +40,8 @@ namespace Village
 
         private void LoadResourceCount(ResourceName resource)
         {
-            // int index = Array.IndexOf(resourceStrings, resource);
-            // if (index == -1)
-            // {
-            //     Debug.Log("The resource \"" + resource + "\" does not exist in resourceStrings: " + string.Join(", ", resourceStrings));
-            // }
-            // else
-            // {
             int value = VillageData.GetResourceCount(resource);
             resourcePanelValues[(int)resource].text = value.ToString();
-            // }
-
         }
 
         private void UpdateResourceCount(ResourceName resource, int value)
@@ -63,12 +54,12 @@ namespace Village
 
         public void OnResourceButtonClick()
         {
-            UpdateResourceCount(ResourceName.Wood, 333);
+            UpdateResourceCount(ResourceName.Wood, -333);
         }
 
         public void OnDropDownValueChange()
         {
-            CurrentButton.SendMessage("execute", CurrentButton);
+            CurrentButton.SendMessage("AllocateBuildingToPlot", CurrentButton);
         }
     }
 }
