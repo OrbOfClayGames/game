@@ -7,8 +7,8 @@ namespace Village
 {
     public class VillageHandler : MonoBehaviour
     {
-        [SerializeField] private Text[] resourceTexts;
-        [SerializeField] private Image[] resourceImages;
+        [SerializeField] private Text[] resourcePanelValues;
+        [SerializeField] private Image[] resourcePanelImages;
         [SerializeField] private Building[] buildingList;
 
         public Button CurrentButton { get; set; }
@@ -19,6 +19,8 @@ namespace Village
         {
             VillageData = ScriptableObject.CreateInstance<VillageData>();
             LoadAllResources();
+            //can't be disabled directly in Unity, because of reasons (bugs happen)
+            FindObjectOfType<Dropdown>().gameObject.SetActive(false);
         }
 
         // Update is called once per frame
@@ -32,7 +34,7 @@ namespace Village
             for (int i = 0; i < Enum.GetNames(typeof(ResourceName)).Length; i++)
             {
                 int value = VillageData.GetResourceCount((ResourceName)i);
-                resourceTexts[i].text = value.ToString();
+                resourcePanelValues[i].text = value.ToString();
             }
         }
 
@@ -46,7 +48,7 @@ namespace Village
             // else
             // {
             int value = VillageData.GetResourceCount(resource);
-            resourceTexts[(int)resource].text = value.ToString();
+            resourcePanelValues[(int)resource].text = value.ToString();
             // }
 
         }

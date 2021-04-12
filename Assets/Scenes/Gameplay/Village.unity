@@ -335,6 +335,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 700436453}
     m_Modifications:
     - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -343,11 +347,23 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2048817011}
     - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
@@ -355,12 +371,24 @@ PrefabInstance:
       value: OnDropDownValueChange
       objectReference: {fileID: 0}
     - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Village.VillageHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: Village.VillageHandler, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2470551633196141217, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2470551633196141246, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
       propertyPath: m_Pivot.x
@@ -452,7 +480,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2470551633196141247, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87626ab800b54574db3b7103a0e29bf5, type: 3}
@@ -1901,13 +1929,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e3eafb64fb8854e986ece3ef25ced3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceTexts:
+  resourcePanelValues:
   - {fileID: 1623562984}
   - {fileID: 830227644}
   - {fileID: 760852097}
   - {fileID: 1011504200}
   - {fileID: 958840514}
-  resourceImages:
+  resourcePanelImages:
   - {fileID: 824521236}
   - {fileID: 1816972743}
   - {fileID: 1807924010}

@@ -1,7 +1,5 @@
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Village
@@ -37,15 +35,17 @@ namespace Village
             if (IsPlotEmpty())
             {
                 dropDown.ClearOptions();
+                dropDown.AddOptions(new List<string>(){"pls pick a building:"});
                 dropDown.AddOptions(villageData.GetUnplacedBuildings());
                 dropDown.gameObject.SetActive(true);
+                dropDown.Show();
                 villageHandler.CurrentButton = button;
 
             }
-            
-           // villageData.GetBuildingOnPlot(button.name);
-
-            
+            else
+            {
+                villageData.GetBuildingOnPlot(button);
+            }
         }
 
         private bool IsPlotEmpty()
@@ -53,7 +53,7 @@ namespace Village
             //struct can't be null, so we have to check if resourcesToBuild was never assigned
             return allocatedBuilding.ResourcesToBuild is null;
         }
-
+        //TODO:umbenennen
         public void execute(Button button)
         {
             dropDown.gameObject.SetActive(false);
@@ -62,15 +62,11 @@ namespace Village
             //TODO: bei höchstem tier läuft nextUpgrade ins Leere, fix it
             nextUpgrade = villageData.GetBuilding(building =>
                 building.Typ == allocatedBuilding.Typ && building.Tier == allocatedBuilding.Tier + 1);
-            villageData.PlotAllocation.Add(button.name, allocatedBuilding);
-            var image = Resources.Load<Sprite>("village/"+allocatedBuilding.Name);
+            villageData.PlotAllocation.Add(button, allocatedBuilding);
+            var image = Resources.Load<Sprite>("village/" + allocatedBuilding.Name);
             button.image.sprite = image;
             //TODO: FIX first selected Value on dropdown FUUUUU
             print(dropDown.options[dropDown.value].text);
-
-
         }
-
     }
 }
-

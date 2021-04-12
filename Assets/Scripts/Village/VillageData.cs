@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Village
 {
@@ -9,7 +10,7 @@ namespace Village
         private Dictionary<ResourceName, int> resourceCount = new Dictionary<ResourceName, int>();
         private List<Building> buildings = new List<Building>();
         //TODO: has to be saved
-        public Dictionary<string, Building> PlotAllocation { get; } = new Dictionary<string, Building>();
+        public Dictionary<Button, Building> PlotAllocation { get; } = new Dictionary<Button, Building>();
 
         public VillageData()
         {
@@ -26,7 +27,7 @@ namespace Village
             }
         }
 
-        public Building GetBuildingOnPlot(string button)
+        public Building GetBuildingOnPlot(Button button)
         {
             Debug.Log(resourceCount[ResourceName.Wood]);
             Debug.Log(PlotAllocation[button].Name);
