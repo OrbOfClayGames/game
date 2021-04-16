@@ -11,8 +11,6 @@ public class PlayerController : MonoBehaviour
 
     public bool battle;
 
-    //CombatTarget combatTarget;
-
     // state
     public static PlayerController instance;
         
@@ -34,8 +32,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        InteractWithMovement();        
-        //InteractWithCombat();
+        InteractWithMovement();       
     }    
 
     private void InteractWithMovement()
@@ -50,33 +47,14 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.tag == "Enemy")
         {
-            battle = true;
-            //CombatTarget combatTarget = collision.gameObject.GetComponent<CombatTarget>();
-            GetComponent<Fighter>().combatTarget = collision.gameObject.GetComponent<CombatTarget>();
-            //Debug.Log(combatTarget);
-            //GetComponent<Fighter>().Attack(combatTarget);            
-            //StartCoroutine(GetComponent<Fighter>().Attacking(combatTarget));
-            GetComponent<Mover>().StopWalking();
-            //Collider2D collisions = collision;
+            battle = true;            
+            GetComponent<Fighter>().combatTarget = collision.gameObject;            
+            GetComponent<Mover>().StopWalking();            
         }
     }
 
     private void StartWalking()
     {
         GetComponent<Mover>().Walk();
-    }
-
-    /*private void InteractWithCombat()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(rayOriginPoint.position, rayDirection, 0.1f);
-        if (hit == true)
-        {
-            if (hit.collider.CompareTag("Enemy"))
-            {
-                GetComponent<Mover>().StopWalking();
-                CombatTarget combatTarget = hit.collider.gameObject.GetComponent<CombatTarget>();                
-                GetComponent<Fighter>().Attack(combatTarget);                                
-            }
-        }
-    }*/
+    }    
 }

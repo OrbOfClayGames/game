@@ -10,7 +10,8 @@ public class Fighter : MonoBehaviour
     bool attacking;
 
     Transform target;
-    public CombatTarget combatTarget;
+    //public CombatTarget combatTarget;
+    public GameObject combatTarget;
 
     float timeSinceLastAttack = 0;
     int attackNumber;
@@ -32,9 +33,8 @@ public class Fighter : MonoBehaviour
             }
         }
     }
-
-    //IEnumerator Attacking(CombatTarget combatTarget)
-    public void Attacking(CombatTarget combatTarget)
+        
+    public void Attacking(GameObject combatTarget)
     {
         if (timeSinceLastAttack > timeBetweenAttacks)
         {
