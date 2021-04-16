@@ -1141,6 +1141,9 @@ GameObject:
   - component: {fileID: 1317528604}
   - component: {fileID: 1317528605}
   - component: {fileID: 1317528606}
+  - component: {fileID: 1317528607}
+  - component: {fileID: 1317528608}
+  - component: {fileID: 1317528609}
   m_Layer: 0
   m_Name: Sprite_Enemy_Slime
   m_TagString: Enemy
@@ -1286,6 +1289,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 20
   isDead: 0
+--- !u!114 &1317528607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317528600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee3e5b4eb7f1b3342ab9a55f43f8a721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1317528608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317528600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece4654917728e2409141fd4d02bd9a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenAttacks: 1
+  damage: 1
+  combatTarget: {fileID: 0}
+--- !u!95 &1317528609
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317528600}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1fcf61565255388438a51a4fcaae8240, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1390950580
 GameObject:
   m_ObjectHideFlags: 0
@@ -2264,6 +2313,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d7773c1dd1a84b4a960fd3ac892ae21, type: 3}
+--- !u!1 &2094106303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3857930192267601190, guid: 86b775d35331d0240b792bffcc97bb8c, type: 3}
+  m_PrefabInstance: {fileID: 3857930192563050904}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2094106311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094106303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f247666c0c61f4185dad4d1c240765, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  isDead: 0
 --- !u!1 &2126745819
 GameObject:
   m_ObjectHideFlags: 0

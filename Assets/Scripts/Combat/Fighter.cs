@@ -20,7 +20,7 @@ public class Fighter : MonoBehaviour
     {
         timeSinceLastAttack += Time.deltaTime;
 
-        if (GetComponent<PlayerController>().battle)
+        if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().battle)
         {
             Attacking(combatTarget);
             //StartCoroutine(Attacking(combatTarget));
