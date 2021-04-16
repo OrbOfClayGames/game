@@ -1145,7 +1145,7 @@ GameObject:
   - component: {fileID: 1317528608}
   - component: {fileID: 1317528609}
   m_Layer: 0
-  m_Name: Sprite_Enemy_Slime
+  m_Name: Enemy_Rat
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
